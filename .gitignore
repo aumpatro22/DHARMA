@@ -41,4 +41,6 @@ spatial_cache/
 Project_Crime_detection.zip
 models/distilbert_mo_student/model.pt
 static/screenshots.zip
+static/Tracing_Criminal_Behaviour_GIET_Presentation.*
+/Tracing_Criminal_Behaviour_GIET_Presentation.*
 logs/*.log
