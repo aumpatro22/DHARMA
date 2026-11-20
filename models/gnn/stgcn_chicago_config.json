@@ -1,0 +1,19 @@
+{
+  "model_type": "CrimeSTGCN",
+  "city": "chicago",
+  "in_channels": 27,
+  "hidden_dim": 64,
+  "num_gru_layers": 2,
+  "dropout": 0.2,
+  "num_nodes": 29807,
+  "num_edges": 77782,
+  "seq_len": 6,
+  "time_bin": "biweekly",
+  "best_epoch": 5,
+  "best_val_loss": 0.02324,
+  "test_rmse": 0.068,
+  "test_mae": 0.009,
+  "top_15_hit_rate_pct": 31.5,
+  "model_file": "/home/aumpatro/Project_Crime_detection/models/gnn/stgcn_chicago_best.pt",
+  "training_time_seconds": 357.1
+}

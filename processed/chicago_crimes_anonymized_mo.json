@@ -1,0 +1,112 @@
+[
+  {
+    "incident_id": 10000,
+    "timestamp": "2020-08-04 11:00:00",
+    "latitude": 41.91034853146774,
+    "longitude": -87.6004326629183,
+    "category": "BURGLARY",
+    "anonymized_narrative": "On 2020-08-04 11:00:00, Officer Person_01 (Officer_Alpha) responded to a report of burglary at Location_Alpha The store manager, Person_02, stated that the suspect, Person_03, walked in, stole items, and fled on foot. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "modus_operandi": {
+        "weapon_classification": "NONE",
+        "weapon_confidence": 0.9,
+        "point_of_entry": "FRONT_DOOR",
+        "entry_confidence": 0.8,
+        "target_profile": "COMMERCIAL",
+        "target_confidence": 0.95,
+        "suspect_count_estimate": "SOLO",
+        "suspect_count_confidence": 0.9
+      },
+      "extracted_keywords": [
+        "burglary",
+        "stole items",
+        "fled on foot",
+        "walked in"
+      ],
+      "overall_extraction_confidence": 0.88,
+      "error_flag": false
+    }
+  },
+  {
+    "incident_id": 10001,
+    "timestamp": "2022-05-22 03:00:00",
+    "latitude": 41.751459811536655,
+    "longitude": -87.57644583466258,
+    "category": "VANDALISM",
+    "anonymized_narrative": "On 2022-05-22 03:00:00, Officer Person_01 (Officer_Alpha) responded to a physical assault at Location_Alpha The victim, Person_02, was struck with a baseball bat by the suspect, Person_03, who then fled the scene. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "modus_operandi": {
+        "weapon_classification": "BLUNT_FORCE",
+        "weapon_confidence": 0.99,
+        "point_of_entry": "NOT_APPLICABLE",
+        "entry_confidence": 1.0,
+        "target_profile": "INDIVIDUAL",
+        "target_confidence": 0.98,
+        "suspect_count_estimate": "SOLO",
+        "suspect_count_confidence": 0.95
+      },
+      "extracted_keywords": [
+        "physical assault",
+        "baseball bat",
+        "fled the scene"
+      ],
+      "overall_extraction_confidence": 0.97,
+      "error_flag": false
+    }
+  },
+  {
+    "incident_id": 10002,
+    "timestamp": "2025-06-16 17:00:00",
+    "latitude": 41.85176512041649,
+    "longitude": -87.60699734305655,
+    "category": "BURGLARY",
+    "anonymized_narrative": "On 2025-06-16 17:00:00, Officer Person_01 (Officer_Alpha) responded to a report of burglary at Location_Alpha The store manager, Person_02, stated that the suspect, Person_03, walked in, stole items, and fled on foot. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "modus_operandi": {
+        "weapon_classification": "NONE",
+        "weapon_confidence": 0.9,
+        "point_of_entry": "FRONT_DOOR",
+        "entry_confidence": 0.8,
+        "target_profile": "COMMERCIAL",
+        "target_confidence": 0.95,
+        "suspect_count_estimate": "SOLO",
+        "suspect_count_confidence": 0.9
+      },
+      "extracted_keywords": [
+        "burglary",
+        "stole items",
+        "fled on foot",
+        "walked in"
+      ],
+      "overall_extraction_confidence": 0.88,
+      "error_flag": false
+    }
+  }
+]

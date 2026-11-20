@@ -1,0 +1,142 @@
+[
+  {
+    "incident_id": 10000,
+    "timestamp": "2020-05-15 05:00:00",
+    "latitude": 37.76354181881035,
+    "longitude": -122.37659856707737,
+    "category": "ASSAULT",
+    "anonymized_narrative": "On 2020-05-15 05:00:00, Officer Person_01 (Officer_Alpha) responded to a physical assault at Location_Alpha The victim, Person_02, was struck with a fists by the suspect, Person_03, who then fled the scene. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "weapon_classification": "MELEE_OTHER",
+      "point_of_entry": "NOT_APPLICABLE",
+      "tactical_quirk": "NONE",
+      "target_profile": "PUBLIC_SPACE",
+      "offense_complexity": "OPPORTUNISTIC",
+      "behavioral_anomaly": "NONE",
+      "modus_operandi_summary": "The suspect physically assaulted the victim with fists and then fled the scene.",
+      "confidence_score": 0.8,
+      "error_flag": false
+    }
+  },
+  {
+    "incident_id": 10001,
+    "timestamp": "2020-07-21 09:00:00",
+    "latitude": 37.6941137028881,
+    "longitude": -122.4419890297577,
+    "category": "VANDALISM",
+    "anonymized_narrative": "On 2020-07-21 09:00:00, Officer Person_01 (Officer_Alpha) responded to a physical assault at Location_Alpha The victim, Person_02, was struck with a baseball bat by the suspect, Person_03, who then fled the scene. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "weapon_classification": "BLUNT_FORCE",
+      "point_of_entry": "NOT_APPLICABLE",
+      "tactical_quirk": "NONE",
+      "target_profile": "PUBLIC_SPACE",
+      "offense_complexity": "OPPORTUNISTIC",
+      "behavioral_anomaly": "NONE",
+      "modus_operandi_summary": "The suspect used a baseball bat to physically assault the victim and then fled the scene.",
+      "confidence_score": 0.8,
+      "error_flag": false
+    }
+  },
+  {
+    "incident_id": 10002,
+    "timestamp": "2021-06-03 13:00:00",
+    "latitude": 37.80751864354816,
+    "longitude": -122.33503787658398,
+    "category": "BURGLARY",
+    "anonymized_narrative": "On 2021-06-03 13:00:00, Officer Person_01 (Officer_Alpha) responded to a report of burglary at Location_Alpha The store manager, Person_02, stated that the suspect, Person_03, walked in, stole items, and fled on foot. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "weapon_classification": "NONE",
+      "point_of_entry": "UNLOCKED_ENTRY",
+      "tactical_quirk": "NONE",
+      "target_profile": "COMMERCIAL_RETAIL",
+      "offense_complexity": "OPPORTUNISTIC",
+      "behavioral_anomaly": "NONE",
+      "modus_operandi_summary": "A suspect entered a commercial retail location and stole items before fleeing on foot.",
+      "confidence_score": 0.8,
+      "error_flag": false
+    }
+  },
+  {
+    "incident_id": 10003,
+    "timestamp": "2022-04-18 09:00:00",
+    "latitude": 37.774531812965,
+    "longitude": -122.39050920792972,
+    "category": "ASSAULT",
+    "anonymized_narrative": "On 2022-04-18 09:00:00, Officer Person_01 (Officer_Alpha) responded to a physical assault at Location_Alpha The victim, Person_02, was struck with a baseball bat by the suspect, Person_03, who then fled the scene. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "weapon_classification": "BLUNT_FORCE",
+      "point_of_entry": "NOT_APPLICABLE",
+      "tactical_quirk": "NONE",
+      "target_profile": "PUBLIC_SPACE",
+      "offense_complexity": "OPPORTUNISTIC",
+      "behavioral_anomaly": "NONE",
+      "modus_operandi_summary": "The suspect used a baseball bat to physically assault the victim and then fled the scene.",
+      "confidence_score": 0.8,
+      "error_flag": false
+    }
+  },
+  {
+    "incident_id": 10004,
+    "timestamp": "2025-02-17 14:00:00",
+    "latitude": 37.78621306303895,
+    "longitude": -122.37049882420698,
+    "category": "VANDALISM",
+    "anonymized_narrative": "On 2025-02-17 14:00:00, Officer Person_01 (Officer_Alpha) responded to a physical assault at Location_Alpha The victim, Person_02, was struck with a metal pipe by the suspect, Person_03, who then fled the scene. Phone: Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "mo_payload": {
+      "weapon_classification": "BLUNT_FORCE",
+      "point_of_entry": "NOT_APPLICABLE",
+      "tactical_quirk": "NONE",
+      "target_profile": "PUBLIC_SPACE",
+      "offense_complexity": "OPPORTUNISTIC",
+      "behavioral_anomaly": "NONE",
+      "modus_operandi_summary": "The suspect used a metal pipe to physically assault the victim and then fled the scene.",
+      "confidence_score": 0.8,
+      "error_flag": false
+    }
+  }
+]

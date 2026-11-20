@@ -1,0 +1,1824 @@
+[
+  {
+    "scenario": {
+      "id": "SCENARIO_1",
+      "title": "Dense PII + Multi-Weapon Conflict + Compound Forced Entry",
+      "city": "chicago",
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "narrative": "At 02:40 on 2026-10-04, Officer Marcus Brody (Badge #5912) and Sgt. Elena Rostova (Badge #1104) responded to a 911 dispatch from resident Jonathan Vance (Phone: 312-555-0812, SSN: 334-12-8891) at 1440 South Michigan Ave, Apt 4B, Chicago. The victim stated that two male suspects (one referred to as 'Demetrius') initially attempted to jimmy the ground-floor rear fire escape window with a crowbar, but failed, and then kicked in the rear kitchen door. One suspect brandished a concealed black semi-automatic pistol with an extended magazine while the second suspect struck the victim across the shoulder with a metal pipe wrench. Suspects looted a safe containing bearer bonds and jewelry, then fled southbound on foot toward Roosevelt Rd. Dispatched EMS unit 14 for victim care."
+    },
+    "response": {
+      "success": true,
+      "meta": {
+        "total_latency_ms": 710.29,
+        "stage_latencies_ms": {
+          "pii_anonymization": 35.01,
+          "neural_mo_and_thinking": 62.39,
+          "stgcn_road_risk": 612.87
+        },
+        "hardware": "Intel Xeon (24 CPU cores)",
+        "cloud_tokens_used": 0,
+        "llama_3_status": "DECAPITATED",
+        "cjis_compliant": true
+      },
+      "privacy": {
+        "original_narrative": "At 02:40 on 2026-10-04, Officer Marcus Brody (Badge #5912) and Sgt. Elena Rostova (Badge #1104) responded to a 911 dispatch from resident Jonathan Vance (Phone: 312-555-0812, SSN: 334-12-8891) at 1440 South Michigan Ave, Apt 4B, Chicago. The victim stated that two male suspects (one referred to as 'Demetrius') initially attempted to jimmy the ground-floor rear fire escape window with a crowbar, but failed, and then kicked in the rear kitchen door. One suspect brandished a concealed black semi-automatic pistol with an extended magazine while the second suspect struck the victim across the shoulder with a metal pipe wrench. Suspects looted a safe containing bearer bonds and jewelry, then fled southbound on foot toward Roosevelt Rd. Dispatched EMS unit 14 for victim care.",
+        "anonymized_narrative": "At 02:40 on 2026-10-04, Officer Person_01 (Officer_Alpha) and Person_02. Person_03 (Officer_Beta) responded to a 911 dispatch from resident Person_04 (Phone: Phone_01, Commercial_Entity_01: SSN_01) at Location_Alpha, Location_Gamma, Location_Delta. The victim stated that two male suspects (one referred to as 'Demetrius') initially attempted to jimmy the ground-floor rear fire escape window with a crowbar, but failed, and then kicked in the rear kitchen door. One suspect brandished a concealed black semi-automatic pistol with an extended magazine while the second suspect struck the victim across the shoulder with a metal pipe wrench. Suspects looted a safe containing bearer bonds and jewelry, then fled southbound on foot toward Location_Epsilon. Dispatched Commercial_Entity_02 unit Location_Betaim care.",
+        "redactions_count": 15,
+        "entity_map": {
+          "Phone_01": "PHONE",
+          "Officer_Alpha": "BADGE",
+          "Officer_Beta": "BADGE",
+          "SSN_01": "SSN",
+          "Location_Alpha": "ADDRESS",
+          "Location_Beta": "ADDRESS",
+          "Person_01": "PERSON",
+          "Person_02": "PERSON",
+          "Person_03": "PERSON",
+          "Person_04": "PERSON",
+          "Commercial_Entity_01": "ORG",
+          "Location_Gamma": "GPE",
+          "Location_Delta": "GPE",
+          "Location_Epsilon": "GPE",
+          "Commercial_Entity_02": "ORG"
+        }
+      },
+      "modus_operandi": {
+        "top_possibilities": {
+          "weapon_classification": [
+            [
+              "BLUNT_FORCE",
+              0.8420939445495605
+            ],
+            [
+              "FIREARM",
+              0.14525766670703888
+            ],
+            [
+              "MELEE_OTHER",
+              0.01263999380171299
+            ]
+          ],
+          "point_of_entry": [
+            [
+              "WINDOW",
+              0.6342641115188599
+            ],
+            [
+              "REAR_DOOR",
+              0.3644139766693115
+            ],
+            [
+              "NOT_APPLICABLE",
+              0.000948977074585855
+            ]
+          ],
+          "target_profile": [
+            [
+              "INDIVIDUAL",
+              0.9361046552658081
+            ],
+            [
+              "COMMERCIAL",
+              0.06378631293773651
+            ],
+            [
+              "RESIDENTIAL",
+              7.129336154321209e-05
+            ]
+          ],
+          "suspect_count_estimate": [
+            [
+              "PAIR",
+              0.8617314100265503
+            ],
+            [
+              "SOLO",
+              0.13826137781143188
+            ],
+            [
+              "GROUP",
+              5.513378255272983e-06
+            ]
+          ]
+        },
+        "prob_distributions": {
+          "weapon_classification": [
+            [
+              "BLUNT_FORCE",
+              0.8420939445495605
+            ],
+            [
+              "FIREARM",
+              0.14525766670703888
+            ],
+            [
+              "MELEE_OTHER",
+              0.01263999380171299
+            ],
+            [
+              "BLADED",
+              5.541983227885794e-06
+            ],
+            [
+              "NONE",
+              2.3254970074049197e-06
+            ],
+            [
+              "UNKNOWN",
+              5.362417141441256e-07
+            ]
+          ],
+          "point_of_entry": [
+            [
+              "WINDOW",
+              0.6342641115188599
+            ],
+            [
+              "REAR_DOOR",
+              0.3644139766693115
+            ],
+            [
+              "NOT_APPLICABLE",
+              0.000948977074585855
+            ],
+            [
+              "ROOF_VENT",
+              0.00017777808534447104
+            ],
+            [
+              "FRONT_DOOR",
+              0.00010631703480612487
+            ],
+            [
+              "GARAGE",
+              7.990353333298117e-05
+            ],
+            [
+              "UNKNOWN",
+              8.912909834180027e-06
+            ]
+          ],
+          "target_profile": [
+            [
+              "INDIVIDUAL",
+              0.9361046552658081
+            ],
+            [
+              "COMMERCIAL",
+              0.06378631293773651
+            ],
+            [
+              "RESIDENTIAL",
+              7.129336154321209e-05
+            ],
+            [
+              "VEHICLE",
+              1.8603021089802496e-05
+            ],
+            [
+              "INFRASTRUCTURE",
+              1.8203494619228877e-05
+            ],
+            [
+              "UNKNOWN",
+              9.051973393070512e-07
+            ]
+          ],
+          "suspect_count_estimate": [
+            [
+              "PAIR",
+              0.8617314100265503
+            ],
+            [
+              "SOLO",
+              0.13826137781143188
+            ],
+            [
+              "GROUP",
+              5.513378255272983e-06
+            ],
+            [
+              "UNKNOWN",
+              1.6629704759907327e-06
+            ]
+          ]
+        },
+        "entropy_scores": {
+          "weapon_classification": 0.6927982853552017,
+          "point_of_entry": 0.9473270383151917,
+          "target_profile": 0.34244222957016063,
+          "suspect_count_estimate": 0.5796761970397422
+        }
+      },
+      "forensic_intelligence": {
+        "scenarios": [
+          {
+            "rank": 1,
+            "title": "Primary Investigative Hypothesis (Dominant M.O.)",
+            "confidence_composite": "43.1%",
+            "weapon": "BLUNT_FORCE",
+            "entry": "WINDOW",
+            "target": "INDIVIDUAL",
+            "suspects": "PAIR",
+            "description": "The incident exhibits strong markers of a pair-perpetrator individual breach. Entry was executed via window utilizing a blunt force instrument. Behavior aligns with structured, pre-targeted property crime."
+          },
+          {
+            "rank": 2,
+            "title": "Secondary Alternative Hypothesis (Concealed / Dynamic M.O.)",
+            "confidence_composite": "4.3%",
+            "weapon": "FIREARM",
+            "entry": "REAR_DOOR",
+            "target": "INDIVIDUAL",
+            "suspects": "PAIR",
+            "description": "Alternative scenario considering firearm threat vector or secondary point of compromise at rear door. May represent opportunistic escalation or hasty egress."
+          },
+          {
+            "rank": 3,
+            "title": "Escalation & Safety Hazard Profile",
+            "threat_level": "ELEVATED",
+            "weapon_threat": "BLUNT_FORCE",
+            "patrol_directive": "Officers must approach with lethal weapon contingency. Maintain perimeter containment around potential vehicle access points."
+          }
+        ],
+        "chain_of_thought": [
+          "1. WEAPON REASONING: Detected primary weapon class 'BLUNT_FORCE' with 84.2% probability.",
+          "   - Clue detected: Physical mechanical leverage / blunt tool referenced. Used for forced leverage or impact.",
+          "   - Clue detected: Ballistic firearm referenced. Standoff threat to responders.",
+          "2. POINT OF ENTRY REASONING: Point of compromise identified as 'WINDOW' (63.4%).",
+          "   - Clue detected: Perimeter glass / window compromise detected.",
+          "   - Clue detected: Door portal compromise observed.",
+          "3. TARGET PROFILE REASONING: Property categorized as 'INDIVIDUAL' (93.6%).",
+          "   - Clue detected: Commercial or industrial premise. Targeted for high-liquidity stock, inventory, or cash.",
+          "4. SUSPECT ESTIMATE REASONING: Suspect count categorized as 'PAIR' (86.2%).",
+          "   - Clue detected: Solitary operative without immediate co-conspirators.",
+          "5. AMBIGUITY & UNCERTAINTY EVALUATION:",
+          "   - weapon_classification    : Entropy=0.69 bits -> [MODERATE AMBIGUITY]",
+          "   - point_of_entry           : Entropy=0.95 bits -> [MODERATE AMBIGUITY]",
+          "   - target_profile           : Entropy=0.34 bits -> [HIGH CERTAINTY]",
+          "   - suspect_count_estimate   : Entropy=0.58 bits -> [HIGH CERTAINTY]"
+        ],
+        "tactical_checklist": [
+          "1. FORENSIC EVIDENCE SWEEP: Secure physical point of breach (WINDOW). Recover tool mark impressions, pry striations, and glass fracture shards for metallurgical matching.",
+          "2. CCTV SURVEILLANCE RADIUS: Pull street security cameras within a 400-meter radius focusing on 15 minutes before and after the reported incident timestamp.",
+          "3. ESCAPE CORRIDOR INTERCEPTION: Relay suspect profile (PAIR actor with BLUNT FORCE capability) to nearest transit hubs and highway exit ramps.",
+          "4. SERIAL RECORD MATCHING: Query Qdrant vector database for matching unsolved cases with M.O.: Target=INDIVIDUAL | Entry=WINDOW | Weapon=BLUNT_FORCE.",
+          "5. PAWN SHOP & FENCE MONITORING: Flag regional pawn broker registries for high-value merchandise matching the stolen property manifest."
+        ]
+      },
+      "math_proof": {
+        "weapon_classification": {
+          "head_title": "Weapon Classification",
+          "dominant_class": "BLUNT_FORCE",
+          "dominant_probability": 84.21,
+          "runner_up_class": "FIREARM",
+          "runner_up_probability": 14.53,
+          "top2_margin_pct": 69.68,
+          "shannon_entropy_bits": 0.693,
+          "exp_sum": 1.1875,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 69.7% margin over runner-up with low Shannon entropy (0.693 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 100.0,
+          "classes_calculation_table": [
+            {
+              "class_name": "BLUNT_FORCE",
+              "raw_logit_zk": 9.582,
+              "exp_zk": 1.0,
+              "probability_pct": 84.21,
+              "entropy_term_bits": 0.2088
+            },
+            {
+              "class_name": "FIREARM",
+              "raw_logit_zk": 7.824,
+              "exp_zk": 0.1725,
+              "probability_pct": 14.53,
+              "entropy_term_bits": 0.4043
+            },
+            {
+              "class_name": "MELEE_OTHER",
+              "raw_logit_zk": 5.383,
+              "exp_zk": 0.015,
+              "probability_pct": 1.26,
+              "entropy_term_bits": 0.0797
+            },
+            {
+              "class_name": "BLADED",
+              "raw_logit_zk": -2.35,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "NONE",
+              "raw_logit_zk": -3.218,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.685,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "FIREARM",
+              "matched_words": [
+                "magazine",
+                "pistol",
+                "semi-automatic"
+              ]
+            },
+            {
+              "matched_class": "BLUNT_FORCE",
+              "matched_words": [
+                "crowbar",
+                "pipe",
+                "wrench"
+              ]
+            },
+            {
+              "matched_class": "MELEE_OTHER",
+              "matched_words": [
+                "kicked"
+              ]
+            }
+          ]
+        },
+        "point_of_entry": {
+          "head_title": "Point Of Entry",
+          "dominant_class": "WINDOW",
+          "dominant_probability": 63.43,
+          "runner_up_class": "REAR_DOOR",
+          "runner_up_probability": 36.44,
+          "top2_margin_pct": 26.99,
+          "shannon_entropy_bits": 0.947,
+          "exp_sum": 1.5766,
+          "reliability_verdict": "MODERATE CONFIDENCE (PROBABLE LEAD)",
+          "verdict_color": "cyan",
+          "verdict_explanation": "'WINDOW' leads with 27.0% margin. Second alternative has partial activation; investigator should log secondary contingency.",
+          "historical_accuracy_pct": 95.6,
+          "classes_calculation_table": [
+            {
+              "class_name": "WINDOW",
+              "raw_logit_zk": 6.401,
+              "exp_zk": 1.0,
+              "probability_pct": 63.43,
+              "entropy_term_bits": 0.4166
+            },
+            {
+              "class_name": "REAR_DOOR",
+              "raw_logit_zk": 5.847,
+              "exp_zk": 0.5745,
+              "probability_pct": 36.44,
+              "entropy_term_bits": 0.5307
+            },
+            {
+              "class_name": "NOT_APPLICABLE",
+              "raw_logit_zk": -0.104,
+              "exp_zk": 0.0015,
+              "probability_pct": 0.09,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "ROOF_VENT",
+              "raw_logit_zk": -1.779,
+              "exp_zk": 0.0003,
+              "probability_pct": 0.02,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "FRONT_DOOR",
+              "raw_logit_zk": -2.293,
+              "exp_zk": 0.0002,
+              "probability_pct": 0.01,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "GARAGE",
+              "raw_logit_zk": -2.579,
+              "exp_zk": 0.0001,
+              "probability_pct": 0.01,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.772,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "REAR_DOOR",
+              "matched_words": [
+                "kitchen door"
+              ]
+            },
+            {
+              "matched_class": "WINDOW",
+              "matched_words": [
+                "window"
+              ]
+            }
+          ]
+        },
+        "target_profile": {
+          "head_title": "Target Profile",
+          "dominant_class": "INDIVIDUAL",
+          "dominant_probability": 93.61,
+          "runner_up_class": "COMMERCIAL",
+          "runner_up_probability": 6.38,
+          "top2_margin_pct": 87.23,
+          "shannon_entropy_bits": 0.342,
+          "exp_sum": 1.0683,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 87.2% margin over runner-up with low Shannon entropy (0.342 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 91.5,
+          "classes_calculation_table": [
+            {
+              "class_name": "INDIVIDUAL",
+              "raw_logit_zk": 8.879,
+              "exp_zk": 1.0,
+              "probability_pct": 93.61,
+              "entropy_term_bits": 0.0892
+            },
+            {
+              "class_name": "COMMERCIAL",
+              "raw_logit_zk": 6.193,
+              "exp_zk": 0.0681,
+              "probability_pct": 6.38,
+              "entropy_term_bits": 0.2533
+            },
+            {
+              "class_name": "RESIDENTIAL",
+              "raw_logit_zk": -0.604,
+              "exp_zk": 0.0001,
+              "probability_pct": 0.01,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "VEHICLE",
+              "raw_logit_zk": -1.947,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "INFRASTRUCTURE",
+              "raw_logit_zk": -1.969,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.97,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "COMMERCIAL",
+              "matched_words": [
+                "jewelry"
+              ]
+            },
+            {
+              "matched_class": "INDIVIDUAL",
+              "matched_words": [
+                "victim"
+              ]
+            }
+          ]
+        },
+        "suspect_count_estimate": {
+          "head_title": "Suspect Count Estimate",
+          "dominant_class": "PAIR",
+          "dominant_probability": 86.17,
+          "runner_up_class": "SOLO",
+          "runner_up_probability": 13.83,
+          "top2_margin_pct": 72.35,
+          "shannon_entropy_bits": 0.58,
+          "exp_sum": 1.1605,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 72.3% margin over runner-up with low Shannon entropy (0.580 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 95.9,
+          "classes_calculation_table": [
+            {
+              "class_name": "PAIR",
+              "raw_logit_zk": 8.904,
+              "exp_zk": 1.0,
+              "probability_pct": 86.17,
+              "entropy_term_bits": 0.185
+            },
+            {
+              "class_name": "SOLO",
+              "raw_logit_zk": 7.074,
+              "exp_zk": 0.1604,
+              "probability_pct": 13.83,
+              "entropy_term_bits": 0.3947
+            },
+            {
+              "class_name": "GROUP",
+              "raw_logit_zk": -3.056,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.254,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "SOLO",
+              "matched_words": [
+                "one suspect"
+              ]
+            },
+            {
+              "matched_class": "PAIR",
+              "matched_words": [
+                "two male"
+              ]
+            }
+          ]
+        }
+      },
+      "spatial_risk": {
+        "city": "CHICAGO",
+        "supported": true,
+        "num_nodes": 29807,
+        "num_edges": 77782,
+        "query_lat": 41.8781,
+        "query_lon": -87.6298,
+        "snapped_node_id": 7019,
+        "snapped_distance_m": 8.6,
+        "snapped_lat": 41.87818,
+        "snapped_lon": -87.62977,
+        "predicted_risk": 0.0,
+        "mean_risk": 0.0049,
+        "std_risk": 0.0764,
+        "z_score": -0.06,
+        "threat_level": "LOW / BASELINE",
+        "badge_color": "emerald",
+        "top_hotspots": [
+          {
+            "rank": 1,
+            "node_id": 27625,
+            "latitude": 41.64583,
+            "longitude": -87.6148,
+            "risk_score": 6.5325
+          },
+          {
+            "rank": 2,
+            "node_id": 9138,
+            "latitude": 41.64674,
+            "longitude": -87.61723,
+            "risk_score": 6.523
+          },
+          {
+            "rank": 3,
+            "node_id": 9832,
+            "latitude": 41.64459,
+            "longitude": -87.61441,
+            "risk_score": 6.5174
+          },
+          {
+            "rank": 4,
+            "node_id": 9137,
+            "latitude": 41.64548,
+            "longitude": -87.61557,
+            "risk_score": 6.0644
+          },
+          {
+            "rank": 5,
+            "node_id": 20712,
+            "latitude": 41.80912,
+            "longitude": -87.58729,
+            "risk_score": 0.7108
+          }
+        ],
+        "calculation_steps": {
+          "step1_utm_projection": "GPS (41.8781, -87.6298) projected to UTM EPSG:32616 coordinates: (447741.9m, 4636433.7m)",
+          "step2_kdtree_snap": "KD-Tree query found nearest road node #7019 at UTM (447744.2m, 4636442.0m)",
+          "step3_euclidean_distance": "Euclidean road offset: d = sqrt((447741.9 - 447744.2)\u00b2 + (4636433.7 - 4636442.0)\u00b2) = 8.6 meters",
+          "step4_stgcn_prediction": "CrimeSTGCN forward pass on 6 biweekly graph tensors yielded node risk = 0.0000",
+          "step5_z_score_normalization": "Z-Score = (LocalRisk - Mean) / Std = (0.0000 - 0.0049) / 0.0764 = -0.06\u03c3",
+          "step6_threat_tier": "Z-Score -0.06\u03c3 maps to threat category: 'LOW / BASELINE'"
+        }
+      }
+    }
+  },
+  {
+    "scenario": {
+      "id": "SCENARIO_2",
+      "title": "Triple Semantic Target Collision (Commercial vs Individual vs Vehicle)",
+      "city": "sf",
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "narrative": "At approximately 13:15, an armored courier driver, Marcus Vance, was ambushed while seated inside a Brinks transport truck parked at the delivery loading dock of Nordstrom Department Store on Market Street. Two armed assailants wearing ballistic vests smashed the driver-side reinforced window with an iron sledgehammer, pulled the driver out onto the pavement, and held a tactical rifle to his neck. Suspects grabbed three locked currency transfer totes valued at $240,000 before escaping in a stolen black Dodge Charger. Contact: Detective Sarah Jenkins (Badge #4820, Phone: 415-555-0922)."
+    },
+    "response": {
+      "success": true,
+      "meta": {
+        "total_latency_ms": 209.04,
+        "stage_latencies_ms": {
+          "pii_anonymization": 27.34,
+          "neural_mo_and_thinking": 39.93,
+          "stgcn_road_risk": 141.76
+        },
+        "hardware": "Intel Xeon (24 CPU cores)",
+        "cloud_tokens_used": 0,
+        "llama_3_status": "DECAPITATED",
+        "cjis_compliant": true
+      },
+      "privacy": {
+        "original_narrative": "At approximately 13:15, an armored courier driver, Marcus Vance, was ambushed while seated inside a Brinks transport truck parked at the delivery loading dock of Nordstrom Department Store on Market Street. Two armed assailants wearing ballistic vests smashed the driver-side reinforced window with an iron sledgehammer, pulled the driver out onto the pavement, and held a tactical rifle to his neck. Suspects grabbed three locked currency transfer totes valued at $240,000 before escaping in a stolen black Dodge Charger. Contact: Detective Sarah Jenkins (Badge #4820, Phone: 415-555-0922).",
+        "anonymized_narrative": "At approximately 13:15, an armored courier driver, Person_01, was ambushed while seated inside a Commercial_Entity_01 transport truck parked at the delivery loading dock of Commercial_Entity_02 on Facility_Alpha. Two armed assailants wearing ballistic vests smashed the driver-side reinforced window with an iron sledgehammer, pulled the driver out onto the pavement, and held a tactical rifle to his neck. Suspects grabbed three locked currency transfer totes valued at $240,000 before escaping in a stolen black Commercial_Entity_03. Contact: Detective Person_02 (Officer_Alpha, Commercial_Entity_04: Phone_01).",
+        "redactions_count": 9,
+        "entity_map": {
+          "Phone_01": "PHONE",
+          "Officer_Alpha": "BADGE",
+          "Person_01": "PERSON",
+          "Commercial_Entity_01": "ORG",
+          "Commercial_Entity_02": "ORG",
+          "Facility_Alpha": "FAC",
+          "Commercial_Entity_03": "ORG",
+          "Person_02": "PERSON",
+          "Commercial_Entity_04": "ORG"
+        }
+      },
+      "modus_operandi": {
+        "top_possibilities": {
+          "weapon_classification": [
+            [
+              "BLUNT_FORCE",
+              0.9640694260597229
+            ],
+            [
+              "FIREARM",
+              0.03590894490480423
+            ],
+            [
+              "BLADED",
+              1.4399544852494728e-05
+            ]
+          ],
+          "point_of_entry": [
+            [
+              "WINDOW",
+              0.9317803382873535
+            ],
+            [
+              "GARAGE",
+              0.04056767001748085
+            ],
+            [
+              "NOT_APPLICABLE",
+              0.02746674045920372
+            ]
+          ],
+          "target_profile": [
+            [
+              "VEHICLE",
+              0.9875057935714722
+            ],
+            [
+              "INDIVIDUAL",
+              0.012483485974371433
+            ],
+            [
+              "COMMERCIAL",
+              6.285531071625883e-06
+            ]
+          ],
+          "suspect_count_estimate": [
+            [
+              "PAIR",
+              0.7070600390434265
+            ],
+            [
+              "GROUP",
+              0.29290658235549927
+            ],
+            [
+              "SOLO",
+              2.9339133106986992e-05
+            ]
+          ]
+        },
+        "prob_distributions": {
+          "weapon_classification": [
+            [
+              "BLUNT_FORCE",
+              0.9640694260597229
+            ],
+            [
+              "FIREARM",
+              0.03590894490480423
+            ],
+            [
+              "BLADED",
+              1.4399544852494728e-05
+            ],
+            [
+              "NONE",
+              5.077843979961472e-06
+            ],
+            [
+              "MELEE_OTHER",
+              1.3804032050757087e-06
+            ],
+            [
+              "UNKNOWN",
+              8.48343745474267e-07
+            ]
+          ],
+          "point_of_entry": [
+            [
+              "WINDOW",
+              0.9317803382873535
+            ],
+            [
+              "GARAGE",
+              0.04056767001748085
+            ],
+            [
+              "NOT_APPLICABLE",
+              0.02746674045920372
+            ],
+            [
+              "REAR_DOOR",
+              0.00016406270151492208
+            ],
+            [
+              "FRONT_DOOR",
+              1.2016489563393407e-05
+            ],
+            [
+              "ROOF_VENT",
+              7.665487828489859e-06
+            ],
+            [
+              "UNKNOWN",
+              1.4228602367438725e-06
+            ]
+          ],
+          "target_profile": [
+            [
+              "VEHICLE",
+              0.9875057935714722
+            ],
+            [
+              "INDIVIDUAL",
+              0.012483485974371433
+            ],
+            [
+              "COMMERCIAL",
+              6.285531071625883e-06
+            ],
+            [
+              "RESIDENTIAL",
+              2.876633743653656e-06
+            ],
+            [
+              "INFRASTRUCTURE",
+              1.2087996310583549e-06
+            ],
+            [
+              "UNKNOWN",
+              2.94852810611701e-07
+            ]
+          ],
+          "suspect_count_estimate": [
+            [
+              "PAIR",
+              0.7070600390434265
+            ],
+            [
+              "GROUP",
+              0.29290658235549927
+            ],
+            [
+              "SOLO",
+              2.9339133106986992e-05
+            ],
+            [
+              "UNKNOWN",
+              3.9735059544909745e-06
+            ]
+          ]
+        },
+        "entropy_scores": {
+          "weapon_classification": 0.22323968068774946,
+          "point_of_entry": 0.4249968776766028,
+          "target_profile": 0.096855758409376,
+          "suspect_count_estimate": 0.872477792600119
+        }
+      },
+      "forensic_intelligence": {
+        "scenarios": [
+          {
+            "rank": 1,
+            "title": "Primary Investigative Hypothesis (Dominant M.O.)",
+            "confidence_composite": "62.7%",
+            "weapon": "BLUNT_FORCE",
+            "entry": "WINDOW",
+            "target": "VEHICLE",
+            "suspects": "PAIR",
+            "description": "The incident exhibits strong markers of a pair-perpetrator vehicle breach. Entry was executed via window utilizing a blunt force instrument. Behavior aligns with structured, pre-targeted property crime."
+          },
+          {
+            "rank": 2,
+            "title": "Secondary Alternative Hypothesis (Concealed / Dynamic M.O.)",
+            "confidence_composite": "0.1%",
+            "weapon": "FIREARM",
+            "entry": "GARAGE",
+            "target": "VEHICLE",
+            "suspects": "PAIR",
+            "description": "Alternative scenario considering firearm threat vector or secondary point of compromise at garage. May represent opportunistic escalation or hasty egress."
+          },
+          {
+            "rank": 3,
+            "title": "Escalation & Safety Hazard Profile",
+            "threat_level": "ELEVATED",
+            "weapon_threat": "BLUNT_FORCE",
+            "patrol_directive": "Officers must approach with lethal weapon contingency. Maintain perimeter containment around potential vehicle access points."
+          }
+        ],
+        "chain_of_thought": [
+          "1. WEAPON REASONING: Detected primary weapon class 'BLUNT_FORCE' with 96.4% probability.",
+          "   - Clue detected: Ballistic firearm referenced. Standoff threat to responders.",
+          "2. POINT OF ENTRY REASONING: Point of compromise identified as 'WINDOW' (93.2%).",
+          "   - Clue detected: Perimeter glass / window compromise detected.",
+          "3. TARGET PROFILE REASONING: Property categorized as 'VEHICLE' (98.8%).",
+          "   - Clue detected: Automotive / vehicular asset.",
+          "4. SUSPECT ESTIMATE REASONING: Suspect count categorized as 'PAIR' (70.7%).",
+          "   - Clue detected: Coordinated two-person partnership.",
+          "5. AMBIGUITY & UNCERTAINTY EVALUATION:",
+          "   - weapon_classification    : Entropy=0.22 bits -> [HIGH CERTAINTY]",
+          "   - point_of_entry           : Entropy=0.42 bits -> [HIGH CERTAINTY]",
+          "   - target_profile           : Entropy=0.10 bits -> [HIGH CERTAINTY]",
+          "   - suspect_count_estimate   : Entropy=0.87 bits -> [MODERATE AMBIGUITY]"
+        ],
+        "tactical_checklist": [
+          "1. FORENSIC EVIDENCE SWEEP: Secure physical point of breach (WINDOW). Recover tool mark impressions, pry striations, and glass fracture shards for metallurgical matching.",
+          "2. CCTV SURVEILLANCE RADIUS: Pull street security cameras within a 400-meter radius focusing on 15 minutes before and after the reported incident timestamp.",
+          "3. ESCAPE CORRIDOR INTERCEPTION: Relay suspect profile (PAIR actor with BLUNT FORCE capability) to nearest transit hubs and highway exit ramps.",
+          "4. SERIAL RECORD MATCHING: Query Qdrant vector database for matching unsolved cases with M.O.: Target=VEHICLE | Entry=WINDOW | Weapon=BLUNT_FORCE.",
+          "5. PAWN SHOP & FENCE MONITORING: Flag regional pawn broker registries for high-value merchandise matching the stolen property manifest."
+        ]
+      },
+      "math_proof": {
+        "weapon_classification": {
+          "head_title": "Weapon Classification",
+          "dominant_class": "BLUNT_FORCE",
+          "dominant_probability": 96.41,
+          "runner_up_class": "FIREARM",
+          "runner_up_probability": 3.59,
+          "top2_margin_pct": 92.82,
+          "shannon_entropy_bits": 0.223,
+          "exp_sum": 1.0373,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 92.8% margin over runner-up with low Shannon entropy (0.223 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 100.0,
+          "classes_calculation_table": [
+            {
+              "class_name": "BLUNT_FORCE",
+              "raw_logit_zk": 9.779,
+              "exp_zk": 1.0,
+              "probability_pct": 96.41,
+              "entropy_term_bits": 0.0509
+            },
+            {
+              "class_name": "FIREARM",
+              "raw_logit_zk": 6.489,
+              "exp_zk": 0.0372,
+              "probability_pct": 3.59,
+              "entropy_term_bits": 0.1723
+            },
+            {
+              "class_name": "BLADED",
+              "raw_logit_zk": -1.333,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "MELEE_OTHER",
+              "raw_logit_zk": -3.678,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "NONE",
+              "raw_logit_zk": -2.375,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.165,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "FIREARM",
+              "matched_words": [
+                "rifle"
+              ]
+            },
+            {
+              "matched_class": "BLUNT_FORCE",
+              "matched_words": [
+                "sledgehammer"
+              ]
+            }
+          ]
+        },
+        "point_of_entry": {
+          "head_title": "Point Of Entry",
+          "dominant_class": "WINDOW",
+          "dominant_probability": 93.18,
+          "runner_up_class": "GARAGE",
+          "runner_up_probability": 4.06,
+          "top2_margin_pct": 89.12,
+          "shannon_entropy_bits": 0.425,
+          "exp_sum": 1.0732,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 89.1% margin over runner-up with low Shannon entropy (0.425 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 95.6,
+          "classes_calculation_table": [
+            {
+              "class_name": "WINDOW",
+              "raw_logit_zk": 8.862,
+              "exp_zk": 1.0,
+              "probability_pct": 93.18,
+              "entropy_term_bits": 0.095
+            },
+            {
+              "class_name": "GARAGE",
+              "raw_logit_zk": 5.728,
+              "exp_zk": 0.0435,
+              "probability_pct": 4.06,
+              "entropy_term_bits": 0.1876
+            },
+            {
+              "class_name": "NOT_APPLICABLE",
+              "raw_logit_zk": 5.338,
+              "exp_zk": 0.0295,
+              "probability_pct": 2.75,
+              "entropy_term_bits": 0.1424
+            },
+            {
+              "class_name": "REAR_DOOR",
+              "raw_logit_zk": 0.217,
+              "exp_zk": 0.0002,
+              "probability_pct": 0.02,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "FRONT_DOOR",
+              "raw_logit_zk": -2.397,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "ROOF_VENT",
+              "raw_logit_zk": -2.846,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.53,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "WINDOW",
+              "matched_words": [
+                "smashed the driver-side reinforced window"
+              ]
+            },
+            {
+              "matched_class": "GARAGE",
+              "matched_words": [
+                "loading dock"
+              ]
+            },
+            {
+              "matched_class": "NOT_APPLICABLE",
+              "matched_words": [
+                "pavement"
+              ]
+            }
+          ]
+        },
+        "target_profile": {
+          "head_title": "Target Profile",
+          "dominant_class": "VEHICLE",
+          "dominant_probability": 98.75,
+          "runner_up_class": "INDIVIDUAL",
+          "runner_up_probability": 1.25,
+          "top2_margin_pct": 97.5,
+          "shannon_entropy_bits": 0.097,
+          "exp_sum": 1.0127,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 97.5% margin over runner-up with low Shannon entropy (0.097 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 91.5,
+          "classes_calculation_table": [
+            {
+              "class_name": "VEHICLE",
+              "raw_logit_zk": 10.448,
+              "exp_zk": 1.0,
+              "probability_pct": 98.75,
+              "entropy_term_bits": 0.0179
+            },
+            {
+              "class_name": "INDIVIDUAL",
+              "raw_logit_zk": 6.077,
+              "exp_zk": 0.0126,
+              "probability_pct": 1.25,
+              "entropy_term_bits": 0.0789
+            },
+            {
+              "class_name": "COMMERCIAL",
+              "raw_logit_zk": -1.517,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "RESIDENTIAL",
+              "raw_logit_zk": -2.298,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "INFRASTRUCTURE",
+              "raw_logit_zk": -3.165,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.576,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "INDIVIDUAL",
+              "matched_words": [
+                "courier",
+                "driver"
+              ]
+            },
+            {
+              "matched_class": "VEHICLE",
+              "matched_words": [
+                "parked",
+                "truck"
+              ]
+            }
+          ]
+        },
+        "suspect_count_estimate": {
+          "head_title": "Suspect Count Estimate",
+          "dominant_class": "PAIR",
+          "dominant_probability": 70.71,
+          "runner_up_class": "GROUP",
+          "runner_up_probability": 29.29,
+          "top2_margin_pct": 41.42,
+          "shannon_entropy_bits": 0.872,
+          "exp_sum": 1.4143,
+          "reliability_verdict": "MODERATE CONFIDENCE (PROBABLE LEAD)",
+          "verdict_color": "cyan",
+          "verdict_explanation": "'PAIR' leads with 41.4% margin. Second alternative has partial activation; investigator should log secondary contingency.",
+          "historical_accuracy_pct": 95.9,
+          "classes_calculation_table": [
+            {
+              "class_name": "PAIR",
+              "raw_logit_zk": 8.043,
+              "exp_zk": 1.0,
+              "probability_pct": 70.71,
+              "entropy_term_bits": 0.3536
+            },
+            {
+              "class_name": "GROUP",
+              "raw_logit_zk": 7.161,
+              "exp_zk": 0.4143,
+              "probability_pct": 29.29,
+              "entropy_term_bits": 0.5189
+            },
+            {
+              "class_name": "SOLO",
+              "raw_logit_zk": -2.047,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.047,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "PAIR",
+              "matched_words": [
+                "two armed"
+              ]
+            },
+            {
+              "matched_class": "GROUP",
+              "matched_words": [
+                "three"
+              ]
+            }
+          ]
+        }
+      },
+      "spatial_risk": {
+        "city": "SF",
+        "supported": true,
+        "num_nodes": 10033,
+        "num_edges": 27628,
+        "query_lat": 37.7749,
+        "query_lon": -122.4194,
+        "snapped_node_id": 8302,
+        "snapped_distance_m": 16.4,
+        "snapped_lat": 37.77504,
+        "snapped_lon": -122.41933,
+        "predicted_risk": 0.0,
+        "mean_risk": 0.0,
+        "std_risk": 0.0,
+        "z_score": 0.0,
+        "threat_level": "LOW / BASELINE",
+        "badge_color": "emerald",
+        "top_hotspots": [
+          {
+            "rank": 1,
+            "node_id": 0,
+            "latitude": 37.78602,
+            "longitude": -122.3909,
+            "risk_score": 0.0
+          },
+          {
+            "rank": 2,
+            "node_id": 10032,
+            "latitude": 37.80773,
+            "longitude": -122.47626,
+            "risk_score": 0.0
+          },
+          {
+            "rank": 3,
+            "node_id": 10031,
+            "latitude": 37.79561,
+            "longitude": -122.45855,
+            "risk_score": 0.0
+          },
+          {
+            "rank": 4,
+            "node_id": 10030,
+            "latitude": 37.79628,
+            "longitude": -122.41895,
+            "risk_score": 0.0
+          },
+          {
+            "rank": 5,
+            "node_id": 10029,
+            "latitude": 37.75746,
+            "longitude": -122.4503,
+            "risk_score": 0.0
+          }
+        ],
+        "calculation_steps": {
+          "step1_utm_projection": "GPS (37.7749, -122.4194) projected to UTM EPSG:32610 coordinates: (551130.8m, 4180998.9m)",
+          "step2_kdtree_snap": "KD-Tree query found nearest road node #8302 at UTM (551137.1m, 4181014.0m)",
+          "step3_euclidean_distance": "Euclidean road offset: d = sqrt((551130.8 - 551137.1)\u00b2 + (4180998.9 - 4181014.0)\u00b2) = 16.4 meters",
+          "step4_stgcn_prediction": "CrimeSTGCN forward pass on 6 biweekly graph tensors yielded node risk = 0.0000",
+          "step5_z_score_normalization": "Z-Score = (LocalRisk - Mean) / Std = (0.0000 - 0.0000) / 0.0000 = +0.00\u03c3",
+          "step6_threat_tier": "Z-Score +0.00\u03c3 maps to threat category: 'LOW / BASELINE'"
+        }
+      }
+    }
+  },
+  {
+    "scenario": {
+      "id": "SCENARIO_3",
+      "title": "Rooftop Infiltration via Thermal Torch & Sophisticated Egress (Zero Violence)",
+      "city": "chicago",
+      "lat": 41.89,
+      "lon": -87.625,
+      "narrative": "Between 01:00 and 04:00, an unknown solo perpetrator bypassed exterior perimeter cameras by scaling the adjacent scaffolding of an antique gallery at 220 East Ohio St. The perpetrator accessed the building by cutting through the rooftop HVAC ventilation shaft using a portable acetylene blowtorch and carbide saw. The suspect descended into the main showroom via climbing ropes, disabled motion sensors using signal jamming equipment, and extracted high-value oil paintings with zero physical violence. No firearms or bladed weapons were brandished. CSI Officer Miller (Badge #9931) recovered thermal cutting residue and synthetic fiber samples."
+    },
+    "response": {
+      "success": true,
+      "meta": {
+        "total_latency_ms": 61.64,
+        "stage_latencies_ms": {
+          "pii_anonymization": 23.91,
+          "neural_mo_and_thinking": 37.52,
+          "stgcn_road_risk": 0.21
+        },
+        "hardware": "Intel Xeon (24 CPU cores)",
+        "cloud_tokens_used": 0,
+        "llama_3_status": "DECAPITATED",
+        "cjis_compliant": true
+      },
+      "privacy": {
+        "original_narrative": "Between 01:00 and 04:00, an unknown solo perpetrator bypassed exterior perimeter cameras by scaling the adjacent scaffolding of an antique gallery at 220 East Ohio St. The perpetrator accessed the building by cutting through the rooftop HVAC ventilation shaft using a portable acetylene blowtorch and carbide saw. The suspect descended into the main showroom via climbing ropes, disabled motion sensors using signal jamming equipment, and extracted high-value oil paintings with zero physical violence. No firearms or bladed weapons were brandished. CSI Officer Miller (Badge #9931) recovered thermal cutting residue and synthetic fiber samples.",
+        "anonymized_narrative": "Between 01:00 and 04:00, an unknown solo perpetrator bypassed exterior perimeter cameras by scaling the adjacent scaffolding of an antique gallery at Location_Alpha The perpetrator accessed the building by cutting through the rooftop HVAC ventilation shaft using a portable acetylene blowtorch and carbide saw. The suspect descended into the main showroom via climbing ropes, disabled motion sensors using signal jamming equipment, and extracted high-value oil paintings with zero physical violence. No firearms or bladed weapons were brandished. Commercial_Entity_01 Officer Person_01 (Officer_Alpha) recovered thermal cutting residue and synthetic fiber samples.",
+        "redactions_count": 4,
+        "entity_map": {
+          "Officer_Alpha": "BADGE",
+          "Location_Alpha": "ADDRESS",
+          "Commercial_Entity_01": "ORG",
+          "Person_01": "PERSON"
+        }
+      },
+      "modus_operandi": {
+        "top_possibilities": {
+          "weapon_classification": [
+            [
+              "FIREARM",
+              0.9961842894554138
+            ],
+            [
+              "BLADED",
+              0.002195263747125864
+            ],
+            [
+              "BLUNT_FORCE",
+              0.0012762293918058276
+            ]
+          ],
+          "point_of_entry": [
+            [
+              "ROOF_VENT",
+              0.9998841285705566
+            ],
+            [
+              "GARAGE",
+              8.031007746467367e-05
+            ],
+            [
+              "NOT_APPLICABLE",
+              1.8200436898041517e-05
+            ]
+          ],
+          "target_profile": [
+            [
+              "COMMERCIAL",
+              0.9994126558303833
+            ],
+            [
+              "RESIDENTIAL",
+              0.0005412097088992596
+            ],
+            [
+              "INDIVIDUAL",
+              3.109659519395791e-05
+            ]
+          ],
+          "suspect_count_estimate": [
+            [
+              "SOLO",
+              0.998724639415741
+            ],
+            [
+              "UNKNOWN",
+              0.0011547423200681806
+            ],
+            [
+              "GROUP",
+              0.00010429794929223135
+            ]
+          ]
+        },
+        "prob_distributions": {
+          "weapon_classification": [
+            [
+              "FIREARM",
+              0.9961842894554138
+            ],
+            [
+              "BLADED",
+              0.002195263747125864
+            ],
+            [
+              "BLUNT_FORCE",
+              0.0012762293918058276
+            ],
+            [
+              "NONE",
+              0.00023911622702144086
+            ],
+            [
+              "MELEE_OTHER",
+              6.048290742910467e-05
+            ],
+            [
+              "UNKNOWN",
+              4.453019209904596e-05
+            ]
+          ],
+          "point_of_entry": [
+            [
+              "ROOF_VENT",
+              0.9998841285705566
+            ],
+            [
+              "GARAGE",
+              8.031007746467367e-05
+            ],
+            [
+              "NOT_APPLICABLE",
+              1.8200436898041517e-05
+            ],
+            [
+              "FRONT_DOOR",
+              7.4852614488918334e-06
+            ],
+            [
+              "WINDOW",
+              6.1549067140731495e-06
+            ],
+            [
+              "REAR_DOOR",
+              1.8252487734571332e-06
+            ],
+            [
+              "UNKNOWN",
+              1.79280175416352e-06
+            ]
+          ],
+          "target_profile": [
+            [
+              "COMMERCIAL",
+              0.9994126558303833
+            ],
+            [
+              "RESIDENTIAL",
+              0.0005412097088992596
+            ],
+            [
+              "INDIVIDUAL",
+              3.109659519395791e-05
+            ],
+            [
+              "INFRASTRUCTURE",
+              8.811666702968068e-06
+            ],
+            [
+              "UNKNOWN",
+              4.054238615935901e-06
+            ],
+            [
+              "VEHICLE",
+              2.1565558654401684e-06
+            ]
+          ],
+          "suspect_count_estimate": [
+            [
+              "SOLO",
+              0.998724639415741
+            ],
+            [
+              "UNKNOWN",
+              0.0011547423200681806
+            ],
+            [
+              "GROUP",
+              0.00010429794929223135
+            ],
+            [
+              "PAIR",
+              1.6271094864350744e-05
+            ]
+          ]
+        },
+        "entropy_scores": {
+          "weapon_classification": 0.037151154150732266,
+          "point_of_entry": 0.00016715600862202024,
+          "target_profile": 0.0008471081838290361,
+          "suspect_count_estimate": 0.013107001606251866
+        }
+      },
+      "forensic_intelligence": {
+        "scenarios": [
+          {
+            "rank": 1,
+            "title": "Primary Investigative Hypothesis (Dominant M.O.)",
+            "confidence_composite": "99.4%",
+            "weapon": "FIREARM",
+            "entry": "ROOF_VENT",
+            "target": "COMMERCIAL",
+            "suspects": "SOLO",
+            "description": "The incident exhibits strong markers of a solo-perpetrator commercial breach. Entry was executed via roof vent utilizing a firearm instrument. Behavior aligns with structured, pre-targeted property crime."
+          },
+          {
+            "rank": 2,
+            "title": "Secondary Alternative Hypothesis (Concealed / Dynamic M.O.)",
+            "confidence_composite": "0.0%",
+            "weapon": "BLADED",
+            "entry": "GARAGE",
+            "target": "COMMERCIAL",
+            "suspects": "SOLO",
+            "description": "Alternative scenario considering bladed threat vector or secondary point of compromise at garage. May represent opportunistic escalation or hasty egress."
+          },
+          {
+            "rank": 3,
+            "title": "Escalation & Safety Hazard Profile",
+            "threat_level": "ELEVATED",
+            "weapon_threat": "FIREARM",
+            "patrol_directive": "Officers must approach with lethal weapon contingency. Maintain perimeter containment around potential vehicle access points."
+          }
+        ],
+        "chain_of_thought": [
+          "1. WEAPON REASONING: Detected primary weapon class 'FIREARM' with 99.6% probability.",
+          "   - No explicit weapon specified in text; classified under dominant opportunistic profile.",
+          "2. POINT OF ENTRY REASONING: Point of compromise identified as 'ROOF_VENT' (100.0%).",
+          "3. TARGET PROFILE REASONING: Property categorized as 'COMMERCIAL' (99.9%).",
+          "4. SUSPECT ESTIMATE REASONING: Suspect count categorized as 'SOLO' (99.9%).",
+          "   - Clue detected: Solitary operative without immediate co-conspirators.",
+          "5. AMBIGUITY & UNCERTAINTY EVALUATION:",
+          "   - weapon_classification    : Entropy=0.04 bits -> [HIGH CERTAINTY]",
+          "   - point_of_entry           : Entropy=0.00 bits -> [HIGH CERTAINTY]",
+          "   - target_profile           : Entropy=0.00 bits -> [HIGH CERTAINTY]",
+          "   - suspect_count_estimate   : Entropy=0.01 bits -> [HIGH CERTAINTY]"
+        ],
+        "tactical_checklist": [
+          "1. FORENSIC EVIDENCE SWEEP: Secure physical point of breach (ROOF VENT). Recover tool mark impressions, pry striations, and glass fracture shards for metallurgical matching.",
+          "2. CCTV SURVEILLANCE RADIUS: Pull street security cameras within a 400-meter radius focusing on 15 minutes before and after the reported incident timestamp.",
+          "3. ESCAPE CORRIDOR INTERCEPTION: Relay suspect profile (SOLO actor with FIREARM capability) to nearest transit hubs and highway exit ramps.",
+          "4. SERIAL RECORD MATCHING: Query Qdrant vector database for matching unsolved cases with M.O.: Target=COMMERCIAL | Entry=ROOF_VENT | Weapon=FIREARM.",
+          "5. PAWN SHOP & FENCE MONITORING: Flag regional pawn broker registries for high-value merchandise matching the stolen property manifest."
+        ]
+      },
+      "math_proof": {
+        "weapon_classification": {
+          "head_title": "Weapon Classification",
+          "dominant_class": "FIREARM",
+          "dominant_probability": 99.62,
+          "runner_up_class": "BLADED",
+          "runner_up_probability": 0.22,
+          "top2_margin_pct": 99.4,
+          "shannon_entropy_bits": 0.037,
+          "exp_sum": 1.0038,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 99.4% margin over runner-up with low Shannon entropy (0.037 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 100.0,
+          "classes_calculation_table": [
+            {
+              "class_name": "FIREARM",
+              "raw_logit_zk": 5.874,
+              "exp_zk": 1.0,
+              "probability_pct": 99.62,
+              "entropy_term_bits": 0.0055
+            },
+            {
+              "class_name": "BLADED",
+              "raw_logit_zk": -0.243,
+              "exp_zk": 0.0022,
+              "probability_pct": 0.22,
+              "entropy_term_bits": 0.0194
+            },
+            {
+              "class_name": "BLUNT_FORCE",
+              "raw_logit_zk": -0.786,
+              "exp_zk": 0.0013,
+              "probability_pct": 0.13,
+              "entropy_term_bits": 0.0123
+            },
+            {
+              "class_name": "NONE",
+              "raw_logit_zk": -2.46,
+              "exp_zk": 0.0002,
+              "probability_pct": 0.02,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "MELEE_OTHER",
+              "raw_logit_zk": -3.835,
+              "exp_zk": 0.0001,
+              "probability_pct": 0.01,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.141,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "FIREARM",
+              "matched_words": [
+                "firearms"
+              ]
+            }
+          ]
+        },
+        "point_of_entry": {
+          "head_title": "Point Of Entry",
+          "dominant_class": "ROOF_VENT",
+          "dominant_probability": 99.99,
+          "runner_up_class": "GARAGE",
+          "runner_up_probability": 0.01,
+          "top2_margin_pct": 99.98,
+          "shannon_entropy_bits": 0.0,
+          "exp_sum": 1.0001,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 100.0% margin over runner-up with low Shannon entropy (0.000 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 95.6,
+          "classes_calculation_table": [
+            {
+              "class_name": "ROOF_VENT",
+              "raw_logit_zk": 9.086,
+              "exp_zk": 1.0,
+              "probability_pct": 99.99,
+              "entropy_term_bits": 0.0002
+            },
+            {
+              "class_name": "GARAGE",
+              "raw_logit_zk": -0.344,
+              "exp_zk": 0.0001,
+              "probability_pct": 0.01,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "FRONT_DOOR",
+              "raw_logit_zk": -2.717,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "REAR_DOOR",
+              "raw_logit_zk": -4.128,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "WINDOW",
+              "raw_logit_zk": -2.912,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "NOT_APPLICABLE",
+              "raw_logit_zk": -1.828,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -4.146,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "ROOF_VENT",
+              "matched_words": [
+                "hvac",
+                "rooftop",
+                "ventilation"
+              ]
+            }
+          ]
+        },
+        "target_profile": {
+          "head_title": "Target Profile",
+          "dominant_class": "COMMERCIAL",
+          "dominant_probability": 99.94,
+          "runner_up_class": "RESIDENTIAL",
+          "runner_up_probability": 0.05,
+          "top2_margin_pct": 99.89,
+          "shannon_entropy_bits": 0.001,
+          "exp_sum": 1.0006,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 99.9% margin over runner-up with low Shannon entropy (0.001 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 91.5,
+          "classes_calculation_table": [
+            {
+              "class_name": "COMMERCIAL",
+              "raw_logit_zk": 8.604,
+              "exp_zk": 1.0,
+              "probability_pct": 99.94,
+              "entropy_term_bits": 0.0008
+            },
+            {
+              "class_name": "RESIDENTIAL",
+              "raw_logit_zk": 1.083,
+              "exp_zk": 0.0005,
+              "probability_pct": 0.05,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "INDIVIDUAL",
+              "raw_logit_zk": -1.774,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "VEHICLE",
+              "raw_logit_zk": -4.442,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "INFRASTRUCTURE",
+              "raw_logit_zk": -3.035,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": -3.811,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "COMMERCIAL",
+              "matched_words": [
+                "showroom"
+              ]
+            }
+          ]
+        },
+        "suspect_count_estimate": {
+          "head_title": "Suspect Count Estimate",
+          "dominant_class": "SOLO",
+          "dominant_probability": 99.87,
+          "runner_up_class": "UNKNOWN",
+          "runner_up_probability": 0.12,
+          "top2_margin_pct": 99.76,
+          "shannon_entropy_bits": 0.013,
+          "exp_sum": 1.0013,
+          "reliability_verdict": "MATHEMATICALLY RELIABLE (HIGH CONFIDENCE)",
+          "verdict_color": "emerald",
+          "verdict_explanation": "Decisive 99.8% margin over runner-up with low Shannon entropy (0.013 bits). Meets verified 96%+ holdout reliability threshold.",
+          "historical_accuracy_pct": 95.9,
+          "classes_calculation_table": [
+            {
+              "class_name": "SOLO",
+              "raw_logit_zk": 6.87,
+              "exp_zk": 1.0,
+              "probability_pct": 99.87,
+              "entropy_term_bits": 0.0018
+            },
+            {
+              "class_name": "UNKNOWN",
+              "raw_logit_zk": 0.107,
+              "exp_zk": 0.0012,
+              "probability_pct": 0.12,
+              "entropy_term_bits": 0.0113
+            },
+            {
+              "class_name": "GROUP",
+              "raw_logit_zk": -2.297,
+              "exp_zk": 0.0001,
+              "probability_pct": 0.01,
+              "entropy_term_bits": 0.0
+            },
+            {
+              "class_name": "PAIR",
+              "raw_logit_zk": -4.155,
+              "exp_zk": 0.0,
+              "probability_pct": 0.0,
+              "entropy_term_bits": 0.0
+            }
+          ],
+          "detected_triggers": [
+            {
+              "matched_class": "SOLO",
+              "matched_words": [
+                "solo",
+                "the suspect"
+              ]
+            }
+          ]
+        }
+      },
+      "spatial_risk": {
+        "city": "CHICAGO",
+        "supported": true,
+        "num_nodes": 29807,
+        "num_edges": 77782,
+        "query_lat": 41.89,
+        "query_lon": -87.625,
+        "snapped_node_id": 6220,
+        "snapped_distance_m": 30.6,
+        "snapped_lat": 41.89011,
+        "snapped_lon": -87.62534,
+        "predicted_risk": 0.0,
+        "mean_risk": 0.0049,
+        "std_risk": 0.0764,
+        "z_score": -0.06,
+        "threat_level": "LOW / BASELINE",
+        "badge_color": "emerald",
+        "top_hotspots": [
+          {
+            "rank": 1,
+            "node_id": 27625,
+            "latitude": 41.64583,
+            "longitude": -87.6148,
+            "risk_score": 6.5325
+          },
+          {
+            "rank": 2,
+            "node_id": 9138,
+            "latitude": 41.64674,
+            "longitude": -87.61723,
+            "risk_score": 6.523
+          },
+          {
+            "rank": 3,
+            "node_id": 9832,
+            "latitude": 41.64459,
+            "longitude": -87.61441,
+            "risk_score": 6.5174
+          },
+          {
+            "rank": 4,
+            "node_id": 9137,
+            "latitude": 41.64548,
+            "longitude": -87.61557,
+            "risk_score": 6.0644
+          },
+          {
+            "rank": 5,
+            "node_id": 20712,
+            "latitude": 41.80912,
+            "longitude": -87.58729,
+            "risk_score": 0.7108
+          }
+        ],
+        "calculation_steps": {
+          "step1_utm_projection": "GPS (41.89, -87.625) projected to UTM EPSG:32616 coordinates: (448149.8m, 4637752.0m)",
+          "step2_kdtree_snap": "KD-Tree query found nearest road node #6220 at UTM (448121.7m, 4637764.0m)",
+          "step3_euclidean_distance": "Euclidean road offset: d = sqrt((448149.8 - 448121.7)\u00b2 + (4637752.0 - 4637764.0)\u00b2) = 30.6 meters",
+          "step4_stgcn_prediction": "CrimeSTGCN forward pass on 6 biweekly graph tensors yielded node risk = 0.0000",
+          "step5_z_score_normalization": "Z-Score = (LocalRisk - Mean) / Std = (0.0000 - 0.0049) / 0.0764 = -0.06\u03c3",
+          "step6_threat_tier": "Z-Score -0.06\u03c3 maps to threat category: 'LOW / BASELINE'"
+        }
+      }
+    }
+  }
+]

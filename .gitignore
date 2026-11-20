@@ -1,0 +1,44 @@
+# Project D.H.A.R.M.A. — Git Ignore Rules
+
+# Environment secrets — NEVER commit
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup & Temporary files
+*.bak
+*.tmp
+*.swp
+*~
+
+# Processed outputs & checkpoints
+processed/*.parquet
+processed/*.log
+processed/checkpoints/
+
+# Spatial & Network caches
+cache/
+spatial_cache/
+
+# Large archives, binary weights >100MB, duplicate zips & logs
+Project_Crime_detection.zip
+models/distilbert_mo_student/model.pt
+static/screenshots.zip
+logs/*.log

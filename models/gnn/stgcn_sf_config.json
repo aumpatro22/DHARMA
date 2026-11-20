@@ -1,0 +1,19 @@
+{
+  "model_type": "CrimeSTGCN",
+  "city": "sf",
+  "in_channels": 27,
+  "hidden_dim": 64,
+  "num_gru_layers": 2,
+  "dropout": 0.2,
+  "num_nodes": 10033,
+  "num_edges": 27628,
+  "seq_len": 6,
+  "time_bin": "biweekly",
+  "best_epoch": 1,
+  "best_val_loss": 0.17827,
+  "test_rmse": 0.1034,
+  "test_mae": 0.0066,
+  "top_15_hit_rate_pct": 3.0,
+  "model_file": "/home/aumpatro/Project_Crime_detection/models/gnn/stgcn_sf_best.pt",
+  "training_time_seconds": 90.9
+}

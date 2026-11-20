@@ -1,0 +1,67 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 5.4167,
+    "val_loss": 3.1688,
+    "avg_accuracy": 0.824,
+    "per_head_accuracy": {
+      "weapon_classification": 0.9467,
+      "point_of_entry": 0.6173,
+      "target_profile": 0.808,
+      "suspect_count_estimate": 0.924
+    },
+    "epoch_time_seconds": 391.6
+  },
+  {
+    "epoch": 2,
+    "train_loss": 2.2645,
+    "val_loss": 1.2898,
+    "avg_accuracy": 0.929,
+    "per_head_accuracy": {
+      "weapon_classification": 0.968,
+      "point_of_entry": 0.8867,
+      "target_profile": 0.904,
+      "suspect_count_estimate": 0.9573
+    },
+    "epoch_time_seconds": 438.2
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.1421,
+    "val_loss": 0.7736,
+    "avg_accuracy": 0.950,
+    "per_head_accuracy": {
+      "weapon_classification": 0.978,
+      "point_of_entry": 0.9533,
+      "target_profile": 0.908,
+      "suspect_count_estimate": 0.9613
+    },
+    "epoch_time_seconds": 848.8
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.7861,
+    "val_loss": 0.6159,
+    "avg_accuracy": 0.954,
+    "per_head_accuracy": {
+      "weapon_classification": 0.984,
+      "point_of_entry": 0.9573,
+      "target_profile": 0.916,
+      "suspect_count_estimate": 0.9587
+    },
+    "epoch_time_seconds": 417.0
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.6694,
+    "val_loss": 0.5806,
+    "avg_accuracy": 0.9528,
+    "per_head_accuracy": {
+      "weapon_classification": 0.982,
+      "point_of_entry": 0.956,
+      "target_profile": 0.9147,
+      "suspect_count_estimate": 0.9587
+    },
+    "epoch_time_seconds": 412.1
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "completed_stages": [
+    {
+      "stage_number": 1,
+      "dataset_name": "NYPD Historical Arrests",
+      "total_rows": 5986025,
+      "status": "COMPLETED",
+      "output_file": "nypd_mo_full.parquet",
+      "throughput_records_sec": 714.2,
+      "elapsed_minutes": 139.69
+    },
+    {
+      "stage_number": 2,
+      "dataset_name": "UK National Police Forces",
+      "total_rows": 9720395,
+      "status": "COMPLETED",
+      "output_file": "uk_mo_full.parquet",
+      "throughput_records_sec": 1285.8,
+      "elapsed_minutes": 126.0
+    },
+    {
+      "stage_number": 3,
+      "dataset_name": "LAPD Crime Data",
+      "total_rows": 3138335,
+      "status": "COMPLETED",
+      "output_file": "lapd_mo_full.parquet",
+      "throughput_records_sec": 122.6,
+      "elapsed_minutes": 426.51
+    },
+    {
+      "stage_number": 4,
+      "dataset_name": "Houston NIBRS Logs",
+      "total_rows": 1526084,
+      "status": "COMPLETED",
+      "output_file": "houston_mo_full.parquet",
+      "throughput_records_sec": 737.3,
+      "elapsed_minutes": 34.5
+    }
+  ],
+  "active_telemetry": {
+    "dataset_name": "Houston NIBRS Logs",
+    "stage_number": 4,
+    "total_stages": 6,
+    "chunk_index": 2,
+    "processed_in_chunk": 526084,
+    "chunk_rows": 526084,
+    "chunk_progress_pct": 100.0,
+    "total_processed_stage": 1526084,
+    "throughput_records_sec": 737.3,
+    "elapsed_seconds": 2069.8,
+    "eta_minutes": 0.0,
+    "status": "COMPLETED",
+    "last_updated": "2026-07-31 01:10:57"
+  }
+}

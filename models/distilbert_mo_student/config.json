@@ -1,0 +1,85 @@
+{
+  "model_type": "MultiHeadDistilBERT",
+  "base_model": "distilbert-base-uncased",
+  "max_seq_length": 256,
+  "num_classes": {
+    "weapon_classification": 6,
+    "point_of_entry": 7,
+    "target_profile": 6,
+    "suspect_count_estimate": 4
+  },
+  "label_maps": {
+    "weapon_classification": {
+      "FIREARM": 0,
+      "BLADED": 1,
+      "BLUNT_FORCE": 2,
+      "MELEE_OTHER": 3,
+      "NONE": 4,
+      "UNKNOWN": 5
+    },
+    "point_of_entry": {
+      "FRONT_DOOR": 0,
+      "REAR_DOOR": 1,
+      "WINDOW": 2,
+      "GARAGE": 3,
+      "ROOF_VENT": 4,
+      "NOT_APPLICABLE": 5,
+      "UNKNOWN": 6
+    },
+    "target_profile": {
+      "COMMERCIAL": 0,
+      "RESIDENTIAL": 1,
+      "INDIVIDUAL": 2,
+      "VEHICLE": 3,
+      "INFRASTRUCTURE": 4,
+      "UNKNOWN": 5
+    },
+    "suspect_count_estimate": {
+      "SOLO": 0,
+      "PAIR": 1,
+      "GROUP": 2,
+      "UNKNOWN": 3
+    }
+  },
+  "inverse_label_maps": {
+    "weapon_classification": {
+      "0": "FIREARM",
+      "1": "BLADED",
+      "2": "BLUNT_FORCE",
+      "3": "MELEE_OTHER",
+      "4": "NONE",
+      "5": "UNKNOWN"
+    },
+    "point_of_entry": {
+      "0": "FRONT_DOOR",
+      "1": "REAR_DOOR",
+      "2": "WINDOW",
+      "3": "GARAGE",
+      "4": "ROOF_VENT",
+      "5": "NOT_APPLICABLE",
+      "6": "UNKNOWN"
+    },
+    "target_profile": {
+      "0": "COMMERCIAL",
+      "1": "RESIDENTIAL",
+      "2": "INDIVIDUAL",
+      "3": "VEHICLE",
+      "4": "INFRASTRUCTURE",
+      "5": "UNKNOWN"
+    },
+    "suspect_count_estimate": {
+      "0": "SOLO",
+      "1": "PAIR",
+      "2": "GROUP",
+      "3": "UNKNOWN"
+    }
+  },
+  "confidence_threshold": 0.8,
+  "training_hyperparameters": {
+    "learning_rate": 3e-05,
+    "batch_size": 32,
+    "num_epochs": 5,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1
+  }
+}

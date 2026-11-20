@@ -1,0 +1,4125 @@
+[
+  {
+    "test_id": 1,
+    "raw_narrative": "On 2026-07-07 at 22:41, Officer John Mitchell (Badge #9935) responded to a shoplifting report at Walmart located at 1524 Lincoln Ct. The suspect, Paul Thomas, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Jack Miller, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (230)-555-2535.",
+    "anonymized_text": "On 2026-07-07 at 22:41, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997010231018066
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002703799109440297
+        ],
+        [
+          "FIREARM",
+          1.6858002709341235e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999804496765137
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.5315697964979336e-05
+        ],
+        [
+          "GARAGE",
+          2.1543310140259564e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6677861213684082
+        ],
+        [
+          "COMMERCIAL",
+          0.3320666551589966
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00012913323007524014
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999426603317261
+        ],
+        [
+          "UNKNOWN",
+          4.067201734869741e-05
+        ],
+        [
+          "GROUP",
+          1.3667951861862093e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004312665600173005,
+      "point_of_entry": 2.8203436334754905e-05,
+      "target_profile": 0.9171505995944328,
+      "suspect_count_estimate": 8.271984065121004e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.1804213523864746,
+    "error_flag": false
+  },
+  {
+    "test_id": 2,
+    "raw_narrative": "Victim Paul Smith reported their car stolen from the driveway of 5674 State Blvd on 2026-07-12. The victim left the keys in the ignition while running inside. The suspect, Jeffrey Nguyen, entered the vehicle and drove away. Officer Timothy Anderson (Badge #7924) spotted the vehicle near Best Buy and initiated a traffic stop, arresting the suspect. Phone: (981)-555-6514.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-12. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Facility_Alpha and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Facility_Alpha": "FAC"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9500293135643005
+        ],
+        [
+          "NONE",
+          0.03464691713452339
+        ],
+        [
+          "FIREARM",
+          0.010266350582242012
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.36419329047203064
+        ],
+        [
+          "FRONT_DOOR",
+          0.2537355124950409
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.23916712403297424
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9301568865776062
+        ],
+        [
+          "INDIVIDUAL",
+          0.06981027871370316
+        ],
+        [
+          "INFRASTRUCTURE",
+          2.2662208721158095e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9994822144508362
+        ],
+        [
+          "UNKNOWN",
+          0.0004005501978099346
+        ],
+        [
+          "GROUP",
+          9.425968892173842e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.35272622246770025,
+      "point_of_entry": 2.1098679586611673,
+      "target_profile": 0.3652591877999725,
+      "suspect_count_estimate": 0.0007468117733172833
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03343796730041504,
+    "error_flag": false
+  },
+  {
+    "test_id": 3,
+    "raw_narrative": "On 2026-07-13 at 08:29, Officer Raymond Robinson (Badge #6925) responded to a shoplifting report at Walmart located at 9559 Randolph Ave. The suspect, Jonathan Davis, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Stephen Jackson, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (877)-555-4733.",
+    "anonymized_text": "On 2026-07-13 at 08:29, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997184872627258
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00025402053142897785
+        ],
+        [
+          "FIREARM",
+          1.6211028196266852e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999791383743286
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.6417039660154842e-05
+        ],
+        [
+          "GARAGE",
+          2.19394587475108e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6817817687988281
+        ],
+        [
+          "COMMERCIAL",
+          0.31806692481040955
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.0001334632106591016
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.999944806098938
+        ],
+        [
+          "UNKNOWN",
+          3.867451232508756e-05
+        ],
+        [
+          "GROUP",
+          1.3540783584176097e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004060784155789003,
+      "point_of_entry": 3.009520726801168e-05,
+      "target_profile": 0.9024016052076076,
+      "suspect_count_estimate": 7.962432712497475e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03277301788330078,
+    "error_flag": false
+  },
+  {
+    "test_id": 4,
+    "raw_narrative": "Officer Christopher White (Badge #2169) was dispatched to 2903 Lombard Rd regarding a physical fight. Upon arrival, the officer found the victim, Gregory Moore, bleeding from the head. According to witnesses, the suspect, Brian Wilson, struck the victim multiple times with a hammer after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (673)-555-7216.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a hammer after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9999759197235107
+        ],
+        [
+          "NONE",
+          1.3805239177600015e-05
+        ],
+        [
+          "MELEE_OTHER",
+          5.800181952508865e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999980926513672
+        ],
+        [
+          "FRONT_DOOR",
+          1.0769897471618606e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.5468846704134194e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998427629470825
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.0001526619162177667
+        ],
+        [
+          "VEHICLE",
+          1.540297034807736e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9996410608291626
+        ],
+        [
+          "UNKNOWN",
+          0.0002767622354440391
+        ],
+        [
+          "GROUP",
+          4.9175785534316674e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 3.4738634495562304e-05,
+      "point_of_entry": 2.750277094556912e-06,
+      "target_profile": 0.00022682583862944524,
+      "suspect_count_estimate": 0.000517745371444052
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03311634063720703,
+    "error_flag": false
+  },
+  {
+    "test_id": 5,
+    "raw_narrative": "On 2026-07-19 at 13:57, Officer Kenneth Sanchez (Badge #4483) responded to a shoplifting report at Home Depot located at 8279 Mission Way. The suspect, Paul Jones, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Patrick Lee, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (471)-555-3287.",
+    "anonymized_text": "On 2026-07-19 at 13:57, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.999703586101532
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00026806010282598436
+        ],
+        [
+          "FIREARM",
+          1.6925592717598192e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999794960021973
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.6012476407922804e-05
+        ],
+        [
+          "GARAGE",
+          2.217952442151727e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6699782609939575
+        ],
+        [
+          "COMMERCIAL",
+          0.3298710882663727
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013228817260824144
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999443292617798
+        ],
+        [
+          "UNKNOWN",
+          3.959605237469077e-05
+        ],
+        [
+          "GROUP",
+          1.3259121260489337e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.00042757003395417096,
+      "point_of_entry": 2.957926998678798e-05,
+      "target_profile": 0.9149249266213424,
+      "suspect_count_estimate": 8.031221959377993e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0335383415222168,
+    "error_flag": false
+  },
+  {
+    "test_id": 6,
+    "raw_narrative": "Victim Nicholas Young reported their car stolen from the driveway of 1896 Cedar Blvd on 2026-07-09. The victim left the keys in the ignition while running inside. The suspect, Mark Rodriguez, entered the vehicle and drove away. Officer Ronald White (Badge #1771) spotted the vehicle near CVS Pharmacy and initiated a traffic stop, arresting the suspect. Phone: (810)-555-2040.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-09. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Commercial_Entity_01 and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Commercial_Entity_01": "ORG"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9480468034744263
+        ],
+        [
+          "NONE",
+          0.03454520180821419
+        ],
+        [
+          "FIREARM",
+          0.011963256634771824
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.41729801893234253
+        ],
+        [
+          "FRONT_DOOR",
+          0.24362806975841522
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.19022807478904724
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9449313282966614
+        ],
+        [
+          "INDIVIDUAL",
+          0.05504431203007698
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.533276736154221e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995231628417969
+        ],
+        [
+          "UNKNOWN",
+          0.00037340063136070967
+        ],
+        [
+          "GROUP",
+          8.131870708893985e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.36659771583460177,
+      "point_of_entry": 2.0676154353247664,
+      "target_profile": 0.3074832870006045,
+      "suspect_count_estimate": 0.000687765119243471
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.04243946075439453,
+    "error_flag": false
+  },
+  {
+    "test_id": 7,
+    "raw_narrative": "On 2026-07-17 at 03:55, Officer Alexander Campbell (Badge #6573) responded to a shoplifting report at Home Depot located at 1927 Michigan Ct. The suspect, Joseph Baker, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Paul Roberts, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (664)-555-1053.",
+    "anonymized_text": "On 2026-07-17 at 03:55, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997102618217468
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002619109582155943
+        ],
+        [
+          "FIREARM",
+          1.6332447557942942e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999786615371704
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.678014814388007e-05
+        ],
+        [
+          "GARAGE",
+          2.237969738416723e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6818491816520691
+        ],
+        [
+          "COMMERCIAL",
+          0.31799978017807007
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013312400551512837
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999454021453857
+        ],
+        [
+          "UNKNOWN",
+          3.862091034534387e-05
+        ],
+        [
+          "GROUP",
+          1.3069291526335292e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.000417941828543237,
+      "point_of_entry": 3.0783123355943597e-05,
+      "target_profile": 0.9023274937067302,
+      "suspect_count_estimate": 7.876446107764943e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0635385513305664,
+    "error_flag": false
+  },
+  {
+    "test_id": 8,
+    "raw_narrative": "Officer Benjamin Allen (Badge #9837) was dispatched to 8789 Elm Ln regarding a physical fight. Upon arrival, the officer found the victim, Charles White, bleeding from the head. According to witnesses, the suspect, Scott Gonzalez, struck the victim multiple times with a handgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (219)-555-2832.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a handgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9915758967399597
+        ],
+        [
+          "BLUNT_FORCE",
+          0.007378498092293739
+        ],
+        [
+          "NONE",
+          0.0007050482672639191
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999980926513672
+        ],
+        [
+          "FRONT_DOOR",
+          1.0753590231615817e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.402990103040793e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998692274093628
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.000126726008602418
+        ],
+        [
+          "VEHICLE",
+          1.522489583294373e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9996086955070496
+        ],
+        [
+          "UNKNOWN",
+          0.0003065957280341536
+        ],
+        [
+          "GROUP",
+          5.010563108953647e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.06435997017395717,
+      "point_of_entry": 2.750277094556912e-06,
+      "target_profile": 0.00018865118866041145,
+      "suspect_count_estimate": 0.0005644211421928147
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.02974724769592285,
+    "error_flag": false
+  },
+  {
+    "test_id": 9,
+    "raw_narrative": "On 2026-07-13 at 21:41, Officer Raymond Young (Badge #8787) responded to a shoplifting report at Nordstrom located at 9107 Washington Dr. The suspect, William Carter, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Thomas Rodriguez, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (821)-555-7932.",
+    "anonymized_text": "On 2026-07-13 at 21:41, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Location_Beta located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Location_Beta": "GPE",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9996777772903442
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002924314176198095
+        ],
+        [
+          "FIREARM",
+          1.9473749489407055e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999772310256958
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.8597229427541606e-05
+        ],
+        [
+          "GARAGE",
+          1.991179942706367e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.7885452508926392
+        ],
+        [
+          "COMMERCIAL",
+          0.21128369867801666
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00015163843636400998
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999277591705322
+        ],
+        [
+          "UNKNOWN",
+          4.6090088289929554e-05
+        ],
+        [
+          "GROUP",
+          2.2522017388837412e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.00046479275885014223,
+      "point_of_entry": 3.2846869651511465e-05,
+      "target_profile": 0.74411750101593,
+      "suspect_count_estimate": 0.00010421627911389484
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.043065786361694336,
+    "error_flag": false
+  },
+  {
+    "test_id": 10,
+    "raw_narrative": "Officer Jeffrey King (Badge #4770) was dispatched to 9741 Clark St regarding a physical fight. Upon arrival, the officer found the victim, Donald Anderson, bleeding from the head. According to witnesses, the suspect, John Davis, struck the victim multiple times with a shotgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (924)-555-1964.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a shotgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9912095069885254
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0078055462799966335
+        ],
+        [
+          "NONE",
+          0.0006631575524806976
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999980926513672
+        ],
+        [
+          "FRONT_DOOR",
+          1.0700709935917985e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.457126638295449e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998584985733032
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013716478133574128
+        ],
+        [
+          "VEHICLE",
+          1.6573735592828598e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995704293251038
+        ],
+        [
+          "UNKNOWN",
+          0.00033973073004744947
+        ],
+        [
+          "GROUP",
+          5.4505871958099306e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.06727494481087247,
+      "point_of_entry": 2.750277094556912e-06,
+      "target_profile": 0.00020412751990621697,
+      "suspect_count_estimate": 0.0006196049096709955
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0417330265045166,
+    "error_flag": false
+  },
+  {
+    "test_id": 11,
+    "raw_narrative": "On 2026-07-04 at 01:25, a robbery was reported at the Chase Bank on 6769 Randolph Ave. The suspect, Thomas Campbell, approached the teller, Larry Torres, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Jacob Thomas, noted the suspect left in a vehicle with license plate LNN-8651. Contact Officer Anthony Wright (Badge #8749) at (874)-555-8062.",
+    "anonymized_text": "On 2026-07-04 at 01:25, a robbery was reported at Commercial_Entity_01 Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.999984622001648
+        ],
+        [
+          "NONE",
+          1.1390872714400757e-05
+        ],
+        [
+          "BLADED",
+          2.6441705358593026e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.2844225764274597
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.22655919194221497
+        ],
+        [
+          "REAR_DOOR",
+          0.21179386973381042
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.6397492289543152
+        ],
+        [
+          "COMMERCIAL",
+          0.35989052057266235
+        ],
+        [
+          "INDIVIDUAL",
+          0.00025539888883940876
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997298121452332
+        ],
+        [
+          "UNKNOWN",
+          0.0002532341459300369
+        ],
+        [
+          "GROUP",
+          1.0530684448895045e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 2.2184148679123076e-05,
+      "point_of_entry": 2.4464265714212887,
+      "target_profile": 0.9428799974012583,
+      "suspect_count_estimate": 0.00038974457130794483
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.16026592254638672,
+    "error_flag": false
+  },
+  {
+    "test_id": 12,
+    "raw_narrative": "Officer Richard Thomas (Badge #4006) was dispatched to 4663 Valencia Rd regarding a physical fight. Upon arrival, the officer found the victim, Jonathan Lewis, bleeding from the head. According to witnesses, the suspect, Matthew Gonzalez, struck the victim multiple times with a shotgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (653)-555-2604.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a shotgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9912095069885254
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0078055462799966335
+        ],
+        [
+          "NONE",
+          0.0006631575524806976
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999980926513672
+        ],
+        [
+          "FRONT_DOOR",
+          1.0700709935917985e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.457126638295449e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998584985733032
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013716478133574128
+        ],
+        [
+          "VEHICLE",
+          1.6573735592828598e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995704293251038
+        ],
+        [
+          "UNKNOWN",
+          0.00033973073004744947
+        ],
+        [
+          "GROUP",
+          5.4505871958099306e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.06727494481087247,
+      "point_of_entry": 2.750277094556912e-06,
+      "target_profile": 0.00020412751990621697,
+      "suspect_count_estimate": 0.0006196049096709955
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.029613494873046875,
+    "error_flag": false
+  },
+  {
+    "test_id": 13,
+    "raw_narrative": "On 2026-07-19 at 23:34, a robbery was reported at the Chase Bank on 7554 Michigan Ct. The suspect, Ronald Brown, approached the teller, Christopher Harris, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, James Harris, noted the suspect left in a vehicle with license plate EGJ-4566. Contact Officer Jacob Wilson (Badge #5345) at (877)-555-8973.",
+    "anonymized_text": "On 2026-07-19 at 23:34, a robbery was reported at the Chase Bank on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 9,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9999743700027466
+        ],
+        [
+          "NONE",
+          2.0483210391830653e-05
+        ],
+        [
+          "BLADED",
+          2.3037789560476085e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.23075784742832184
+        ],
+        [
+          "ROOF_VENT",
+          0.1986592411994934
+        ],
+        [
+          "FRONT_DOOR",
+          0.16469520330429077
+        ]
+      ],
+      "target_profile": [
+        [
+          "COMMERCIAL",
+          0.7696319222450256
+        ],
+        [
+          "VEHICLE",
+          0.23012994229793549
+        ],
+        [
+          "INDIVIDUAL",
+          0.00012817175593227148
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995561242103577
+        ],
+        [
+          "UNKNOWN",
+          0.00041975578642450273
+        ],
+        [
+          "GROUP",
+          1.5339597666752525e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 3.697435338560773e-05,
+      "point_of_entry": 2.5607290467419466,
+      "target_profile": 0.7784914025717792,
+      "suspect_count_estimate": 0.0006402338127473756
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.035477399826049805,
+    "error_flag": false
+  },
+  {
+    "test_id": 14,
+    "raw_narrative": "On 2026-07-08 at 18:38, Officer Jack Lee (Badge #3579) responded to a shoplifting report at Home Depot located at 1031 Haight Ave. The suspect, Michael Brown, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Nicholas King, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (270)-555-2113.",
+    "anonymized_text": "On 2026-07-08 at 18:38, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997044205665588
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00026623820303939283
+        ],
+        [
+          "FIREARM",
+          1.7477910660090856e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999802112579346
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.5541414541075937e-05
+        ],
+        [
+          "GARAGE",
+          2.1897110400459496e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6683737635612488
+        ],
+        [
+          "COMMERCIAL",
+          0.331481397151947
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00012681786029133946
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999440908432007
+        ],
+        [
+          "UNKNOWN",
+          3.95721108361613e-05
+        ],
+        [
+          "GROUP",
+          1.3292530638864264e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.00042636651179491885,
+      "point_of_entry": 2.8547394870777206e-05,
+      "target_profile": 0.9165575421105223,
+      "suspect_count_estimate": 8.065616570516409e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03211402893066406,
+    "error_flag": false
+  },
+  {
+    "test_id": 15,
+    "raw_narrative": "On 2026-07-03 at 00:29, Officer Brandon Garcia (Badge #5272) responded to a shoplifting report at Macy's located at 3446 Broadway Rd. The suspect, Timothy Nelson, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Eric Lee, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (605)-555-3144.",
+    "anonymized_text": "On 2026-07-03 at 00:29, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01's located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997649788856506
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002118792326655239
+        ],
+        [
+          "FIREARM",
+          1.3020832739130128e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999783039093018
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.6195383068406954e-05
+        ],
+        [
+          "GARAGE",
+          2.7588935154199135e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6080145835876465
+        ],
+        [
+          "COMMERCIAL",
+          0.3918343484401703
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.000129287873278372
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999409914016724
+        ],
+        [
+          "UNKNOWN",
+          4.231787897879258e-05
+        ],
+        [
+          "GROUP",
+          1.3610514542961027e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0003390225067836941,
+      "point_of_entry": 3.129906020661768e-05,
+      "target_profile": 0.9660826503081819,
+      "suspect_count_estimate": 8.512745769003155e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.04349493980407715,
+    "error_flag": false
+  },
+  {
+    "test_id": 16,
+    "raw_narrative": "Victim Anthony Allen reported their car stolen from the driveway of 1227 Clark Ln on 2026-07-18. The victim left the keys in the ignition while running inside. The suspect, William Wright, entered the vehicle and drove away. Officer Larry Miller (Badge #6718) spotted the vehicle near Macy's and initiated a traffic stop, arresting the suspect. Phone: (361)-555-8179.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-18. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Commercial_Entity_01's and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Commercial_Entity_01": "ORG"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9496087431907654
+        ],
+        [
+          "NONE",
+          0.03447721153497696
+        ],
+        [
+          "FIREARM",
+          0.010868270881474018
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.4101006090641022
+        ],
+        [
+          "FRONT_DOOR",
+          0.2427806407213211
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.19635653495788574
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9419847726821899
+        ],
+        [
+          "INDIVIDUAL",
+          0.05798749625682831
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.7781389033189043e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995181560516357
+        ],
+        [
+          "UNKNOWN",
+          0.00037216368946246803
+        ],
+        [
+          "GROUP",
+          8.635082485852763e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.3556924163434846,
+      "point_of_entry": 2.0793671104874702,
+      "target_profile": 0.31944129273817645,
+      "suspect_count_estimate": 0.0006949849273427213
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0290679931640625,
+    "error_flag": false
+  },
+  {
+    "test_id": 17,
+    "raw_narrative": "On 2026-07-02 at 00:21, Officer Thomas Taylor (Badge #5616) responded to a shoplifting report at Macy's located at 3550 Broadway Rd. The suspect, Joseph Miller, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Charles Moore, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (717)-555-9004.",
+    "anonymized_text": "On 2026-07-02 at 00:21, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01's located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997639060020447
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002128775231540203
+        ],
+        [
+          "FIREARM",
+          1.307318962062709e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999781847000122
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.629232610866893e-05
+        ],
+        [
+          "GARAGE",
+          2.7757730549637927e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6079345941543579
+        ],
+        [
+          "COMMERCIAL",
+          0.39191585779190063
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00012786293518729508
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999414682388306
+        ],
+        [
+          "UNKNOWN",
+          4.2018418753286824e-05
+        ],
+        [
+          "GROUP",
+          1.3458986359182745e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0003405699859921932,
+      "point_of_entry": 3.1471039115837635e-05,
+      "target_profile": 0.9661331944246221,
+      "suspect_count_estimate": 8.443956751757361e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03299355506896973,
+    "error_flag": false
+  },
+  {
+    "test_id": 18,
+    "raw_narrative": "At around 09:23 on 2026-07-02, a burglary occurred at 1932 Pine Blvd. The homeowner, Jeffrey Scott, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Patrick Ramirez, reported seeing a suspicious individual matching the description of Christopher Mitchell running from the backyard around 09:23. Officer Benjamin Taylor (Badge #1158) is investigating. Call (236)-555-7049 with tips.",
+    "anonymized_text": "At around 09:23 on 2026-07-02, a burglary occurred at Location_Alpha The homeowner, Person_01, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Person_02, reported seeing a suspicious individual matching the description of Person_03 running from the backyard around 09:23. Officer Person_04 (Officer_Alpha) is investigating. Call Phone_01 with tips.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.6667259335517883
+        ],
+        [
+          "NONE",
+          0.16100941598415375
+        ],
+        [
+          "BLADED",
+          0.13580960035324097
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "WINDOW",
+          0.9999302625656128
+        ],
+        [
+          "ROOF_VENT",
+          2.5261657356168143e-05
+        ],
+        [
+          "REAR_DOOR",
+          1.80381175596267e-05
+        ]
+      ],
+      "target_profile": [
+        [
+          "RESIDENTIAL",
+          0.9892867803573608
+        ],
+        [
+          "COMMERCIAL",
+          0.010700841434299946
+        ],
+        [
+          "VEHICLE",
+          5.906626938667614e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9834375381469727
+        ],
+        [
+          "UNKNOWN",
+          0.01419665664434433
+        ],
+        [
+          "GROUP",
+          0.002147972583770752
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 1.4236989770475856,
+      "point_of_entry": 0.00010060489984175851,
+      "target_profile": 0.08542193740547667,
+      "suspect_count_estimate": 0.12987607740666987
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03513813018798828,
+    "error_flag": false
+  },
+  {
+    "test_id": 19,
+    "raw_narrative": "On 2026-07-09 at 05:50, Officer Brian Wilson (Badge #7658) responded to a shoplifting report at Home Depot located at 2632 Clark Blvd. The suspect, Alexander Thomas, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Brian Roberts, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (622)-555-1406.",
+    "anonymized_text": "On 2026-07-09 at 05:50, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997146725654602
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002557661209721118
+        ],
+        [
+          "FIREARM",
+          1.7279540770687163e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999793767929077
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.610700201126747e-05
+        ],
+        [
+          "GARAGE",
+          2.2487990918307332e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6749699115753174
+        ],
+        [
+          "COMMERCIAL",
+          0.32488948106765747
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.0001230457564815879
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999459981918335
+        ],
+        [
+          "UNKNOWN",
+          3.845704850391485e-05
+        ],
+        [
+          "GROUP",
+          1.2694651559286285e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004115803003986218,
+      "point_of_entry": 2.975124910103157e-05,
+      "target_profile": 0.9097426785792223,
+      "suspect_count_estimate": 7.790459451774789e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03263688087463379,
+    "error_flag": false
+  },
+  {
+    "test_id": 20,
+    "raw_narrative": "On 2026-07-13 at 21:53, Officer Edward Williams (Badge #4728) responded to a shoplifting report at CVS Pharmacy located at 3752 Elm Rd. The suspect, Jacob Anderson, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Brian Martin, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (536)-555-5564.",
+    "anonymized_text": "On 2026-07-13 at 21:53, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997047781944275
+        ],
+        [
+          "BLUNT_FORCE",
+          0.000267022754997015
+        ],
+        [
+          "FIREARM",
+          1.6802003301563673e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999793767929077
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.6047910321503878e-05
+        ],
+        [
+          "GARAGE",
+          2.2300012005871395e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6700957417488098
+        ],
+        [
+          "COMMERCIAL",
+          0.329754501581192
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013150600716471672
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999434947967529
+        ],
+        [
+          "UNKNOWN",
+          4.010749398730695e-05
+        ],
+        [
+          "GROUP",
+          1.3495540770236403e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.00042585071627619094,
+      "point_of_entry": 2.975124910103157e-05,
+      "target_profile": 0.9148049324688393,
+      "suspect_count_estimate": 8.151603062482066e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.031828880310058594,
+    "error_flag": false
+  },
+  {
+    "test_id": 21,
+    "raw_narrative": "Victim Daniel Nguyen reported their car stolen from the driveway of 9874 Geary Ln on 2026-07-02. The victim left the keys in the ignition while running inside. The suspect, Joseph Taylor, entered the vehicle and drove away. Officer Kevin Johnson (Badge #2776) spotted the vehicle near Walgreens and initiated a traffic stop, arresting the suspect. Phone: (646)-555-9379.",
+    "anonymized_text": "Commercial_Entity_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-02. The victim left the keys in the ignition while running inside. The suspect, Person_01, entered the vehicle and drove away. Officer Person_02 (Officer_Alpha) spotted the vehicle near Location_Beta and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Location_Beta": "GPE"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9413453340530396
+        ],
+        [
+          "NONE",
+          0.037300996482372284
+        ],
+        [
+          "FIREARM",
+          0.014924110844731331
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.46156057715415955
+        ],
+        [
+          "FRONT_DOOR",
+          0.20238149166107178
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.16475041210651398
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9508849382400513
+        ],
+        [
+          "INDIVIDUAL",
+          0.04909384995698929
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.1340940545778722e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9994893074035645
+        ],
+        [
+          "UNKNOWN",
+          0.0004078923084307462
+        ],
+        [
+          "GROUP",
+          8.125487511279061e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.4064652369388099,
+      "point_of_entry": 2.0408958187828317,
+      "target_profile": 0.28256421426247524,
+      "suspect_count_estimate": 0.0007365840691362796
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.09220671653747559,
+    "error_flag": false
+  },
+  {
+    "test_id": 22,
+    "raw_narrative": "On 2026-07-11 at 12:44, Officer Eric Wright (Badge #6967) responded to a shoplifting report at Safeway located at 7166 Pine Ln. The suspect, Alexander Campbell, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Gregory Gonzalez, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (521)-555-3041.",
+    "anonymized_text": "On 2026-07-11 at 12:44, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.999702513217926
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00026866383268497884
+        ],
+        [
+          "FIREARM",
+          1.725104266370181e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999798536300659
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.5746156350360252e-05
+        ],
+        [
+          "GARAGE",
+          2.1930186449026223e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6706778407096863
+        ],
+        [
+          "COMMERCIAL",
+          0.3291737139225006
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013003460480831563
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999442100524902
+        ],
+        [
+          "UNKNOWN",
+          3.9518752600997686e-05
+        ],
+        [
+          "GROUP",
+          1.3375466551224235e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004291174181109183,
+      "point_of_entry": 2.9063332521043137e-05,
+      "target_profile": 0.9142085638602548,
+      "suspect_count_estimate": 8.048419265972355e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.032357215881347656,
+    "error_flag": false
+  },
+  {
+    "test_id": 23,
+    "raw_narrative": "Officer Stephen Rodriguez (Badge #3851) was dispatched to 9424 Michigan Ct regarding a physical fight. Upon arrival, the officer found the victim, Gregory Harris, bleeding from the head. According to witnesses, the suspect, Matthew Clark, struck the victim multiple times with a screwdriver after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (200)-555-5978.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a screwdriver after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9081110954284668
+        ],
+        [
+          "NONE",
+          0.04984563589096069
+        ],
+        [
+          "MELEE_OTHER",
+          0.02308049611747265
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999979734420776
+        ],
+        [
+          "FRONT_DOOR",
+          1.1173434586453368e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.8210592379073205e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998526573181152
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00014282562187872827
+        ],
+        [
+          "VEHICLE",
+          1.5620863678122987e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9996119141578674
+        ],
+        [
+          "UNKNOWN",
+          0.0003080263559240848
+        ],
+        [
+          "GROUP",
+          4.722984886029735e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.6020212829089968,
+      "point_of_entry": 2.922259407137549e-06,
+      "target_profile": 0.0002125534526442893,
+      "suspect_count_estimate": 0.0005597794205340156
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.029273271560668945,
+    "error_flag": false
+  },
+  {
+    "test_id": 24,
+    "raw_narrative": "At around 14:26 on 2026-07-03, a burglary occurred at 1630 Clark Dr. The homeowner, Gregory Garcia, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Andrew Allen, reported seeing a suspicious individual matching the description of Jack Hernandez running from the backyard around 14:26. Officer Nicholas Walker (Badge #6491) is investigating. Call (403)-555-3414 with tips.",
+    "anonymized_text": "At around 14:26 on 2026-07-03, a burglary occurred at Location_Alpha The homeowner, Person_01, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Person_02, reported seeing a suspicious individual matching the description of Person_03 running from the backyard around 14:26. Officer Person_04 (Officer_Alpha) is investigating. Call Phone_01 with tips.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.6816316246986389
+        ],
+        [
+          "NONE",
+          0.1559716910123825
+        ],
+        [
+          "BLADED",
+          0.12724870443344116
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "WINDOW",
+          0.9999275207519531
+        ],
+        [
+          "ROOF_VENT",
+          2.605150075396523e-05
+        ],
+        [
+          "REAR_DOOR",
+          1.8650653146323748e-05
+        ]
+      ],
+      "target_profile": [
+        [
+          "RESIDENTIAL",
+          0.9894194602966309
+        ],
+        [
+          "COMMERCIAL",
+          0.010568068362772465
+        ],
+        [
+          "VEHICLE",
+          5.899762072658632e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9834923148155212
+        ],
+        [
+          "UNKNOWN",
+          0.014162909239530563
+        ],
+        [
+          "GROUP",
+          0.002128317952156067
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 1.385998410197624,
+      "point_of_entry": 0.00010456021952537737,
+      "target_profile": 0.08455377733739461,
+      "suspect_count_estimate": 0.1294938767104494
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03167414665222168,
+    "error_flag": false
+  },
+  {
+    "test_id": 25,
+    "raw_narrative": "Victim Gary Sanchez reported their car stolen from the driveway of 1846 Geary Rd on 2026-07-15. The victim left the keys in the ignition while running inside. The suspect, Frank Harris, entered the vehicle and drove away. Officer Matthew Rivera (Badge #1090) spotted the vehicle near Home Depot and initiated a traffic stop, arresting the suspect. Phone: (912)-555-9486.",
+    "anonymized_text": "Victim Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-15. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Commercial_Entity_01 and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Commercial_Entity_01": "ORG"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9491183757781982
+        ],
+        [
+          "NONE",
+          0.031553205102682114
+        ],
+        [
+          "FIREARM",
+          0.01281172875314951
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.3505427837371826
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.276621013879776
+        ],
+        [
+          "FRONT_DOOR",
+          0.22056138515472412
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9214465618133545
+        ],
+        [
+          "INDIVIDUAL",
+          0.07852522283792496
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.9397781215957366e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.999683141708374
+        ],
+        [
+          "UNKNOWN",
+          0.0002450811443850398
+        ],
+        [
+          "GROUP",
+          5.5997184972511604e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.36690871810905945,
+      "point_of_entry": 2.12796078545962,
+      "target_profile": 0.3969986577909865,
+      "suspect_count_estimate": 0.0004570560129505263
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03149008750915527,
+    "error_flag": false
+  },
+  {
+    "test_id": 26,
+    "raw_narrative": "On 2026-07-17 at 15:40, a robbery was reported at the Chase Bank on 7091 Lombard Way. The suspect, Stephen Hill, approached the teller, Kenneth Carter, and presented a note demanding cash and claiming to have a concealed baseball bat. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Jeffrey Flores, noted the suspect left in a vehicle with license plate OIY-5050. Contact Officer Gregory King (Badge #9270) at (961)-555-8777.",
+    "anonymized_text": "On 2026-07-17 at 15:40, a robbery was reported at the Chase Bank on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed baseball bat. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 9,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.992368757724762
+        ],
+        [
+          "FIREARM",
+          0.006190158426761627
+        ],
+        [
+          "NONE",
+          0.0012075974373146892
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "ROOF_VENT",
+          0.22667714953422546
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.20349770784378052
+        ],
+        [
+          "WINDOW",
+          0.1621849536895752
+        ]
+      ],
+      "target_profile": [
+        [
+          "COMMERCIAL",
+          0.8639835119247437
+        ],
+        [
+          "VEHICLE",
+          0.1358674317598343
+        ],
+        [
+          "INDIVIDUAL",
+          7.629951869603246e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995535016059875
+        ],
+        [
+          "UNKNOWN",
+          0.0004251970676705241
+        ],
+        [
+          "GROUP",
+          1.3882116036256775e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.068083269384216,
+      "point_of_entry": 2.573420818877352,
+      "target_profile": 0.573496431542061,
+      "suspect_count_estimate": 0.0006440157462732685
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0339357852935791,
+    "error_flag": false
+  },
+  {
+    "test_id": 27,
+    "raw_narrative": "At around 13:21 on 2026-07-14, a burglary occurred at 8949 Pine Blvd. The homeowner, Andrew Thomas, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Paul Perez, reported seeing a suspicious individual matching the description of William Rivera running from the backyard around 13:21. Officer Paul Lewis (Badge #6238) is investigating. Call (436)-555-7275 with tips.",
+    "anonymized_text": "At around 13:21 on 2026-07-14, a burglary occurred at Location_Alpha The homeowner, Person_01, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Person_02, reported seeing a suspicious individual matching the description of Person_03 running from the backyard around 13:21. Officer Person_04 (Officer_Alpha) is investigating. Call Phone_01 with tips.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.6777170896530151
+        ],
+        [
+          "NONE",
+          0.15668852627277374
+        ],
+        [
+          "BLADED",
+          0.1296693980693817
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "WINDOW",
+          0.9999290704727173
+        ],
+        [
+          "ROOF_VENT",
+          2.5845922209555283e-05
+        ],
+        [
+          "REAR_DOOR",
+          1.827249252528418e-05
+        ]
+      ],
+      "target_profile": [
+        [
+          "RESIDENTIAL",
+          0.9895839095115662
+        ],
+        [
+          "COMMERCIAL",
+          0.010403900407254696
+        ],
+        [
+          "VEHICLE",
+          5.721509296563454e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9838330149650574
+        ],
+        [
+          "UNKNOWN",
+          0.013823071494698524
+        ],
+        [
+          "GROUP",
+          0.0021313922479748726
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 1.3974365484739344,
+      "point_of_entry": 0.0001023246053847477,
+      "target_profile": 0.0834764040684229,
+      "suspect_count_estimate": 0.12743045393497557
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.032562255859375,
+    "error_flag": false
+  },
+  {
+    "test_id": 28,
+    "raw_narrative": "Victim Timothy Harris reported their car stolen from the driveway of 9532 Mission Way on 2026-07-08. The victim left the keys in the ignition while running inside. The suspect, Michael Wilson, entered the vehicle and drove away. Officer Ryan Clark (Badge #1320) spotted the vehicle near Walmart and initiated a traffic stop, arresting the suspect. Phone: (560)-555-5892.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-08. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Commercial_Entity_01 and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Commercial_Entity_01": "ORG"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9476707577705383
+        ],
+        [
+          "NONE",
+          0.03472558408975601
+        ],
+        [
+          "FIREARM",
+          0.012120280414819717
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.41868337988853455
+        ],
+        [
+          "FRONT_DOOR",
+          0.2451830357313156
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.18851149082183838
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9453827738761902
+        ],
+        [
+          "INDIVIDUAL",
+          0.054593268781900406
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.5100553355296142e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995173215866089
+        ],
+        [
+          "UNKNOWN",
+          0.0003780284314416349
+        ],
+        [
+          "GROUP",
+          8.251826511695981e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.3687959957815111,
+      "point_of_entry": 2.063829446993033,
+      "target_profile": 0.30562993674918826,
+      "suspect_count_estimate": 0.0006961882251748252
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.029178142547607422,
+    "error_flag": false
+  },
+  {
+    "test_id": 29,
+    "raw_narrative": "Officer Jason Young (Badge #3704) was dispatched to 7757 Cedar St regarding a physical fight. Upon arrival, the officer found the victim, Kevin Nelson, bleeding from the head. According to witnesses, the suspect, John Harris, struck the victim multiple times with a screwdriver after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (806)-555-1444.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a screwdriver after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9081110954284668
+        ],
+        [
+          "NONE",
+          0.04984563589096069
+        ],
+        [
+          "MELEE_OTHER",
+          0.02308049611747265
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999979734420776
+        ],
+        [
+          "FRONT_DOOR",
+          1.1173434586453368e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.8210592379073205e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998526573181152
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00014282562187872827
+        ],
+        [
+          "VEHICLE",
+          1.5620863678122987e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9996119141578674
+        ],
+        [
+          "UNKNOWN",
+          0.0003080263559240848
+        ],
+        [
+          "GROUP",
+          4.722984886029735e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.6020212829089968,
+      "point_of_entry": 2.922259407137549e-06,
+      "target_profile": 0.0002125534526442893,
+      "suspect_count_estimate": 0.0005597794205340156
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.030159950256347656,
+    "error_flag": false
+  },
+  {
+    "test_id": 30,
+    "raw_narrative": "On 2026-07-01 at 07:12, a robbery was reported at the Chase Bank on 4233 Pine Way. The suspect, Ryan Lee, approached the teller, Kevin Carter, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Edward Moore, noted the suspect left in a vehicle with license plate BLH-2124. Contact Officer Kenneth Wilson (Badge #7906) at (967)-555-9837.",
+    "anonymized_text": "On 2026-07-01 at 07:12, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9999806880950928
+        ],
+        [
+          "NONE",
+          1.4029970770934597e-05
+        ],
+        [
+          "BLADED",
+          3.570118451534654e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.27758681774139404
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.25555160641670227
+        ],
+        [
+          "REAR_DOOR",
+          0.19407367706298828
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.6224297285079956
+        ],
+        [
+          "COMMERCIAL",
+          0.3771741986274719
+        ],
+        [
+          "INDIVIDUAL",
+          0.0002876401995308697
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997522234916687
+        ],
+        [
+          "UNKNOWN",
+          0.00023077351215761155
+        ],
+        [
+          "GROUP",
+          1.0972942618536763e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 2.785947771672328e-05,
+      "point_of_entry": 2.4375533607881743,
+      "target_profile": 0.956322445357282,
+      "suspect_count_estimate": 0.0003574202076340245
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.06794118881225586,
+    "error_flag": false
+  },
+  {
+    "test_id": 31,
+    "raw_narrative": "On 2026-07-01 at 09:36, Officer Brandon Martinez (Badge #4571) responded to a shoplifting report at Home Depot located at 7719 State Ln. The suspect, Donald Rodriguez, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Joseph Torres, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (820)-555-2876.",
+    "anonymized_text": "On 2026-07-01 at 09:36, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997103810310364
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00026074290508404374
+        ],
+        [
+          "FIREARM",
+          1.681139474385418e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999802112579346
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.5450972568942234e-05
+        ],
+        [
+          "GARAGE",
+          2.1796106466354104e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6712006330490112
+        ],
+        [
+          "COMMERCIAL",
+          0.32865646481513977
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00012514315312728286
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999440908432007
+        ],
+        [
+          "UNKNOWN",
+          3.973422644776292e-05
+        ],
+        [
+          "GROUP",
+          1.3242349268693943e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004177698957192805,
+      "point_of_entry": 2.8547394870777206e-05,
+      "target_profile": 0.9136717845060142,
+      "suspect_count_estimate": 8.065616570516409e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.032302141189575195,
+    "error_flag": false
+  },
+  {
+    "test_id": 32,
+    "raw_narrative": "On 2026-07-17 at 20:21, a robbery was reported at the Chase Bank on 5041 Jackson Ave. The suspect, Matthew Jones, approached the teller, Justin Hall, and presented a note demanding cash and claiming to have a concealed shotgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Benjamin Thomas, noted the suspect left in a vehicle with license plate RNV-7071. Contact Officer Ronald Rivera (Badge #2669) at (242)-555-6688.",
+    "anonymized_text": "On 2026-07-17 at 20:21, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed shotgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9999791383743286
+        ],
+        [
+          "NONE",
+          1.4384139831236098e-05
+        ],
+        [
+          "BLADED",
+          4.204459401080385e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.2866394817829132
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.24968744814395905
+        ],
+        [
+          "REAR_DOOR",
+          0.19435691833496094
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.6185538172721863
+        ],
+        [
+          "COMMERCIAL",
+          0.38107630610466003
+        ],
+        [
+          "INDIVIDUAL",
+          0.00027035397943109274
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997300505638123
+        ],
+        [
+          "UNKNOWN",
+          0.00025234706117771566
+        ],
+        [
+          "GROUP",
+          1.1607553460635245e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 3.009520726801168e-05,
+      "point_of_entry": 2.4312263670247476,
+      "target_profile": 0.95907607868341,
+      "suspect_count_estimate": 0.0003894006989130085
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03329753875732422,
+    "error_flag": false
+  },
+  {
+    "test_id": 33,
+    "raw_narrative": "On 2026-07-08 at 02:17, Officer Timothy Young (Badge #3506) responded to a shoplifting report at Safeway located at 7235 Washington Dr. The suspect, Richard Ramirez, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Ryan Rivera, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (751)-555-8921.",
+    "anonymized_text": "On 2026-07-08 at 02:17, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997140765190125
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002578098210506141
+        ],
+        [
+          "FIREARM",
+          1.6294221495627426e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999796152114868
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.6064084775280207e-05
+        ],
+        [
+          "GARAGE",
+          2.1687030766770476e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6829419732093811
+        ],
+        [
+          "COMMERCIAL",
+          0.3169100880622864
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.0001301685260841623
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999451637268066
+        ],
+        [
+          "UNKNOWN",
+          3.862521407427266e-05
+        ],
+        [
+          "GROUP",
+          1.3261117601359729e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.00041243996800473557,
+      "point_of_entry": 2.9407290852042047e-05,
+      "target_profile": 0.9011216486798235,
+      "suspect_count_estimate": 7.910840755808872e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03240036964416504,
+    "error_flag": false
+  },
+  {
+    "test_id": 34,
+    "raw_narrative": "On 2026-07-09 at 17:00, a robbery was reported at the Chase Bank on 8198 Broadway Blvd. The suspect, Ryan Torres, approached the teller, Brandon Nelson, and presented a note demanding cash and claiming to have a concealed unknown. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Edward Perez, noted the suspect left in a vehicle with license plate ZIK-5581. Contact Officer Donald Carter (Badge #1470) at (417)-555-6813.",
+    "anonymized_text": "On 2026-07-09 at 17:00, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed unknown. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.7017430663108826
+        ],
+        [
+          "NONE",
+          0.23381060361862183
+        ],
+        [
+          "BLADED",
+          0.04763011261820793
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.3095366954803467
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.30458545684814453
+        ],
+        [
+          "REAR_DOOR",
+          0.1565140187740326
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.5295752882957458
+        ],
+        [
+          "COMMERCIAL",
+          0.4700377881526947
+        ],
+        [
+          "INDIVIDUAL",
+          0.0003104093193542212
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9993919134140015
+        ],
+        [
+          "UNKNOWN",
+          0.0005843424587510526
+        ],
+        [
+          "GROUP",
+          1.6158108337549493e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 1.1786525461897648,
+      "point_of_entry": 2.336780324087469,
+      "target_profile": 0.9976117033844814,
+      "suspect_count_estimate": 0.0008770152731094685
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0327913761138916,
+    "error_flag": false
+  },
+  {
+    "test_id": 35,
+    "raw_narrative": "Victim Timothy Young reported their car stolen from the driveway of 7900 Castro Way on 2026-07-19. The victim left the keys in the ignition while running inside. The suspect, Donald Campbell, entered the vehicle and drove away. Officer Matthew Garcia (Badge #4937) spotted the vehicle near Walmart and initiated a traffic stop, arresting the suspect. Phone: (295)-555-5820.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-19. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Commercial_Entity_01 and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Commercial_Entity_01": "ORG"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.947862446308136
+        ],
+        [
+          "NONE",
+          0.034611914306879044
+        ],
+        [
+          "FIREARM",
+          0.012044738046824932
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.4158405363559723
+        ],
+        [
+          "FRONT_DOOR",
+          0.24017301201820374
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.193586528301239
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9441652297973633
+        ],
+        [
+          "INDIVIDUAL",
+          0.055810049176216125
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.5579385944874957e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995309114456177
+        ],
+        [
+          "UNKNOWN",
+          0.0003671812009997666
+        ],
+        [
+          "GROUP",
+          8.006997813936323e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.3677580793008341,
+      "point_of_entry": 2.0722179855403917,
+      "target_profile": 0.31061638661480184,
+      "suspect_count_estimate": 0.0006765915353795094
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.029273033142089844,
+    "error_flag": false
+  },
+  {
+    "test_id": 36,
+    "raw_narrative": "Victim Stephen Perez reported their car stolen from the driveway of 4538 Michigan Dr on 2026-07-07. The victim left the keys in the ignition while running inside. The suspect, Jason Mitchell, entered the vehicle and drove away. Officer Eric Thompson (Badge #8434) spotted the vehicle near Best Buy and initiated a traffic stop, arresting the suspect. Phone: (323)-555-4155.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-07. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Facility_Alpha and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Facility_Alpha": "FAC"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9504448175430298
+        ],
+        [
+          "NONE",
+          0.03429606556892395
+        ],
+        [
+          "FIREARM",
+          0.010227940045297146
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.37018057703971863
+        ],
+        [
+          "FRONT_DOOR",
+          0.2572394609451294
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.2307872474193573
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.932388424873352
+        ],
+        [
+          "INDIVIDUAL",
+          0.0675799697637558
+        ],
+        [
+          "INFRASTRUCTURE",
+          2.1710196961066686e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9994643330574036
+        ],
+        [
+          "UNKNOWN",
+          0.0004145505663473159
+        ],
+        [
+          "GROUP",
+          9.769877942744642e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.35055474232979983,
+      "point_of_entry": 2.1033461446091812,
+      "target_profile": 0.3568693774747597,
+      "suspect_count_estimate": 0.0007725955792000746
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.09109950065612793,
+    "error_flag": false
+  },
+  {
+    "test_id": 37,
+    "raw_narrative": "On 2026-07-02 at 17:18, a robbery was reported at the Chase Bank on 4953 Clark Ln. The suspect, Justin Carter, approached the teller, Eric Hill, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Andrew Miller, noted the suspect left in a vehicle with license plate WRE-5494. Contact Officer Paul Campbell (Badge #4180) at (509)-555-1231.",
+    "anonymized_text": "On 2026-07-02 at 17:18, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9999808073043823
+        ],
+        [
+          "NONE",
+          1.3938498341303784e-05
+        ],
+        [
+          "BLADED",
+          3.456689228187315e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.2791588604450226
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.25419655442237854
+        ],
+        [
+          "REAR_DOOR",
+          0.19345174729824066
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.6221808195114136
+        ],
+        [
+          "COMMERCIAL",
+          0.3774253726005554
+        ],
+        [
+          "INDIVIDUAL",
+          0.00028348556952551007
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997408986091614
+        ],
+        [
+          "UNKNOWN",
+          0.00024141927133314312
+        ],
+        [
+          "GROUP",
+          1.1328498658258468e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 2.7687498376953978e-05,
+      "point_of_entry": 2.43671806631184,
+      "target_profile": 0.9565020529298407,
+      "suspect_count_estimate": 0.0003737544181663723
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03433585166931152,
+    "error_flag": false
+  },
+  {
+    "test_id": 38,
+    "raw_narrative": "At around 20:43 on 2026-07-19, a burglary occurred at 7316 Broadway Blvd. The homeowner, James Torres, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Andrew Walker, reported seeing a suspicious individual matching the description of Gary Miller running from the backyard around 20:43. Officer Benjamin Carter (Badge #8843) is investigating. Call (458)-555-8827 with tips.",
+    "anonymized_text": "At around 20:43 on 2026-07-19, a burglary occurred at Location_Alpha The homeowner, Person_01, returned home to find a rear window shattered and the lock broken. Several pieces of jewelry and laptops were missing. A neighbor, Person_02, reported seeing a suspicious individual matching the description of Person_03 running from the backyard around 20:43. Officer Person_04 (Officer_Alpha) is investigating. Call Phone_01 with tips.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.6737879514694214
+        ],
+        [
+          "NONE",
+          0.15604856610298157
+        ],
+        [
+          "BLADED",
+          0.1338026523590088
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "WINDOW",
+          0.9999281167984009
+        ],
+        [
+          "ROOF_VENT",
+          2.6057778086396866e-05
+        ],
+        [
+          "REAR_DOOR",
+          1.8643355360836722e-05
+        ]
+      ],
+      "target_profile": [
+        [
+          "RESIDENTIAL",
+          0.9894527196884155
+        ],
+        [
+          "COMMERCIAL",
+          0.010535195469856262
+        ],
+        [
+          "VEHICLE",
+          5.685164978785906e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9832903146743774
+        ],
+        [
+          "UNKNOWN",
+          0.014342744834721088
+        ],
+        [
+          "GROUP",
+          0.0021540578454732895
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 1.4080099521928584,
+      "point_of_entry": 0.0001037003683428955,
+      "target_profile": 0.08433787306753537,
+      "suspect_count_estimate": 0.13081494615093614
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.032071590423583984,
+    "error_flag": false
+  },
+  {
+    "test_id": 39,
+    "raw_narrative": "On 2026-07-19 at 19:03, Officer Charles Martinez (Badge #7818) responded to a shoplifting report at Nordstrom located at 9866 Jackson Rd. The suspect, Larry Martin, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Joseph Scott, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (589)-555-8381.",
+    "anonymized_text": "On 2026-07-19 at 19:03, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Location_Beta located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Location_Beta": "GPE",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.999698281288147
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002728253311943263
+        ],
+        [
+          "FIREARM",
+          1.8825323422788642e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.999977707862854
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.8284870748175308e-05
+        ],
+        [
+          "GARAGE",
+          1.942958306244691e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.788945198059082
+        ],
+        [
+          "COMMERCIAL",
+          0.2108849585056305
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00015064641775097698
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999241828918457
+        ],
+        [
+          "UNKNOWN",
+          4.814546264242381e-05
+        ],
+        [
+          "GROUP",
+          2.393449904047884e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.00043522097275262427,
+      "point_of_entry": 3.215895454769364e-05,
+      "target_profile": 0.743357872757016,
+      "suspect_count_estimate": 0.00010937537667468904
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03179478645324707,
+    "error_flag": false
+  },
+  {
+    "test_id": 40,
+    "raw_narrative": "Victim Benjamin Wilson reported their car stolen from the driveway of 2673 Clark Blvd on 2026-07-02. The victim left the keys in the ignition while running inside. The suspect, Dennis Wilson, entered the vehicle and drove away. Officer Jack Miller (Badge #2330) spotted the vehicle near Nordstrom and initiated a traffic stop, arresting the suspect. Phone: (276)-555-3564.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-02. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Location_Beta and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Location_Beta": "GPE"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9500168561935425
+        ],
+        [
+          "NONE",
+          0.032158542424440384
+        ],
+        [
+          "FIREARM",
+          0.012304633855819702
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.41913729906082153
+        ],
+        [
+          "FRONT_DOOR",
+          0.2305665910243988
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.195586696267128
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9437046647071838
+        ],
+        [
+          "INDIVIDUAL",
+          0.056270893663167953
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.505902037024498e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.99943608045578
+        ],
+        [
+          "UNKNOWN",
+          0.0004410176770761609
+        ],
+        [
+          "GROUP",
+          9.812349162530154e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.35789199605967026,
+      "point_of_entry": 2.0764130746745444,
+      "target_profile": 0.31249355658049804,
+      "suspect_count_estimate": 0.0008133330517794809
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.029096364974975586,
+    "error_flag": false
+  },
+  {
+    "test_id": 41,
+    "raw_narrative": "Officer Frank Robinson (Badge #4241) was dispatched to 7065 Maple Rd regarding a physical fight. Upon arrival, the officer found the victim, Mark Taylor, bleeding from the head. According to witnesses, the suspect, William Baker, struck the victim multiple times with a unknown after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (472)-555-3330.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a unknown after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.8604936003684998
+        ],
+        [
+          "NONE",
+          0.0843764990568161
+        ],
+        [
+          "MELEE_OTHER",
+          0.03152051195502281
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999980926513672
+        ],
+        [
+          "FRONT_DOOR",
+          1.0800796417242964e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.451677628163452e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998505115509033
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00014521040429826826
+        ],
+        [
+          "VEHICLE",
+          1.564960825817252e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995177984237671
+        ],
+        [
+          "UNKNOWN",
+          0.0003940634778700769
+        ],
+        [
+          "GROUP",
+          5.071970008430071e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.8057413655392944,
+      "point_of_entry": 2.750277094556912e-06,
+      "target_profile": 0.00021564868087747837,
+      "suspect_count_estimate": 0.000695500626536694
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.11369729042053223,
+    "error_flag": false
+  },
+  {
+    "test_id": 42,
+    "raw_narrative": "On 2026-07-19 at 18:01, Officer Ryan Hall (Badge #9090) responded to a shoplifting report at CVS Pharmacy located at 7272 Pine St. The suspect, Joshua Hall, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Nicholas Wright, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (952)-555-6280.",
+    "anonymized_text": "On 2026-07-19 at 18:01, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997155070304871
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0002558673149906099
+        ],
+        [
+          "FIREARM",
+          1.6865580619196407e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999808073043823
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.4930684301361907e-05
+        ],
+        [
+          "GARAGE",
+          2.1489165646926267e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6623270511627197
+        ],
+        [
+          "COMMERCIAL",
+          0.3375293016433716
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00012536291615106165
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999403953552246
+        ],
+        [
+          "UNKNOWN",
+          4.238279871060513e-05
+        ],
+        [
+          "GROUP",
+          1.4179653589962982e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004103767648887358,
+      "point_of_entry": 2.7687498376953978e-05,
+      "target_profile": 0.922556647495764,
+      "suspect_count_estimate": 8.598731994428328e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03199434280395508,
+    "error_flag": false
+  },
+  {
+    "test_id": 43,
+    "raw_narrative": "Officer Larry Williams (Badge #8245) was dispatched to 4657 Washington Ct regarding a physical fight. Upon arrival, the officer found the victim, Daniel Walker, bleeding from the head. According to witnesses, the suspect, Dennis Carter, struck the victim multiple times with a shotgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at (293)-555-8700.",
+    "anonymized_text": "Officer Person_01 (Officer_Alpha) was dispatched to Location_Alphaing a physical fight. Upon arrival, the officer found the victim, Person_02, bleeding from the head. According to witnesses, the suspect, Person_03, struck the victim multiple times with a shotgun after a verbal dispute. The suspect was apprehended down the street. Call dispatch at Phone_01.",
+    "redactions_count": 6,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.9912095069885254
+        ],
+        [
+          "BLUNT_FORCE",
+          0.0078055462799966335
+        ],
+        [
+          "NONE",
+          0.0006631575524806976
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.9999980926513672
+        ],
+        [
+          "FRONT_DOOR",
+          1.0700709935917985e-06
+        ],
+        [
+          "ROOF_VENT",
+          3.457126638295449e-07
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.9998584985733032
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00013716478133574128
+        ],
+        [
+          "VEHICLE",
+          1.6573735592828598e-06
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995704293251038
+        ],
+        [
+          "UNKNOWN",
+          0.00033973073004744947
+        ],
+        [
+          "GROUP",
+          5.4505871958099306e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.06727494481087247,
+      "point_of_entry": 2.750277094556912e-06,
+      "target_profile": 0.00020412751990621697,
+      "suspect_count_estimate": 0.0006196049096709955
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03006267547607422,
+    "error_flag": false
+  },
+  {
+    "test_id": 44,
+    "raw_narrative": "On 2026-07-07 at 16:23, a robbery was reported at the Chase Bank on 4235 Broadway Ave. The suspect, Ronald Carter, approached the teller, Stephen Williams, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Ryan Garcia, noted the suspect left in a vehicle with license plate VRO-7770. Contact Officer Andrew Nelson (Badge #6153) at (726)-555-1018.",
+    "anonymized_text": "On 2026-07-07 at 16:23, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed handgun. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.999981164932251
+        ],
+        [
+          "NONE",
+          1.3870213479094673e-05
+        ],
+        [
+          "BLADED",
+          3.3964529393415432e-06
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.27821609377861023
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.2504577040672302
+        ],
+        [
+          "REAR_DOOR",
+          0.19536995887756348
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.6238192319869995
+        ],
+        [
+          "COMMERCIAL",
+          0.3757926821708679
+        ],
+        [
+          "INDIVIDUAL",
+          0.0002785763063002378
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.999737560749054
+        ],
+        [
+          "UNKNOWN",
+          0.00024420273257419467
+        ],
+        [
+          "GROUP",
+          1.1748265933420043e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 2.7171560234632148e-05,
+      "point_of_entry": 2.441359819946876,
+      "target_profile": 0.9553121009568233,
+      "suspect_count_estimate": 0.00037856867648358044
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03445005416870117,
+    "error_flag": false
+  },
+  {
+    "test_id": 45,
+    "raw_narrative": "Victim Stephen Brown reported their car stolen from the driveway of 4819 Valencia Way on 2026-07-14. The victim left the keys in the ignition while running inside. The suspect, Benjamin Lewis, entered the vehicle and drove away. Officer Dennis Young (Badge #3146) spotted the vehicle near Target and initiated a traffic stop, arresting the suspect. Phone: (229)-555-4920.",
+    "anonymized_text": "Person_01 reported their car stolen from the driveway of Location_Alpha on 2026-07-14. The victim left the keys in the ignition while running inside. The suspect, Person_02, entered the vehicle and drove away. Officer Person_03 (Officer_Alpha) spotted the vehicle near Commercial_Entity_01 and initiated a traffic stop, arresting the suspect. Phone: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Commercial_Entity_01": "ORG"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9476025700569153
+        ],
+        [
+          "NONE",
+          0.03468164801597595
+        ],
+        [
+          "FIREARM",
+          0.012181708589196205
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "REAR_DOOR",
+          0.4150960147380829
+        ],
+        [
+          "FRONT_DOOR",
+          0.23963938653469086
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.19428573548793793
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.9441349506378174
+        ],
+        [
+          "INDIVIDUAL",
+          0.0558403916656971
+        ],
+        [
+          "INFRASTRUCTURE",
+          1.5496587366214953e-05
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9995362758636475
+        ],
+        [
+          "UNKNOWN",
+          0.00036273151636123657
+        ],
+        [
+          "GROUP",
+          7.924034434836358e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.36942967663260606,
+      "point_of_entry": 2.0738805066547314,
+      "target_profile": 0.3107400986849875,
+      "suspect_count_estimate": 0.0006688559265537136
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03176140785217285,
+    "error_flag": false
+  },
+  {
+    "test_id": 46,
+    "raw_narrative": "On 2026-07-03 at 08:49, Officer Ryan Davis (Badge #5479) responded to a shoplifting report at Best Buy located at 6907 Castro Way. The suspect, Samuel Martinez, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Andrew Allen, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (667)-555-3369.",
+    "anonymized_text": "On 2026-07-03 at 08:49, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Facility_Alpha located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Facility_Alpha": "FAC",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9996964931488037
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00028048836975358427
+        ],
+        [
+          "FIREARM",
+          1.5403677025460638e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999722242355347
+        ],
+        [
+          "NOT_APPLICABLE",
+          2.3722081095911562e-05
+        ],
+        [
+          "GARAGE",
+          1.8923456082120538e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.8422279357910156
+        ],
+        [
+          "COMMERCIAL",
+          0.15752455592155457
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00022832115064375103
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999171495437622
+        ],
+        [
+          "UNKNOWN",
+          5.3891191782895476e-05
+        ],
+        [
+          "GROUP",
+          2.485911136318464e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004377999317351978,
+      "point_of_entry": 4.006995843625375e-05,
+      "target_profile": 0.6286502956066466,
+      "suspect_count_estimate": 0.00011952154804562464
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03199195861816406,
+    "error_flag": false
+  },
+  {
+    "test_id": 47,
+    "raw_narrative": "On 2026-07-19 at 12:14, a robbery was reported at the Chase Bank on 2534 Valencia Way. The suspect, Paul Smith, approached the teller, Andrew Campbell, and presented a note demanding cash and claiming to have a concealed crowbar. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Joshua Nguyen, noted the suspect left in a vehicle with license plate MOK-4090. Contact Officer Kevin Allen (Badge #9022) at (540)-555-9903.",
+    "anonymized_text": "On 2026-07-19 at 12:14, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed crowbar. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9891106486320496
+        ],
+        [
+          "FIREARM",
+          0.008942250162363052
+        ],
+        [
+          "NONE",
+          0.0013571720337495208
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.27486851811408997
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.26327407360076904
+        ],
+        [
+          "REAR_DOOR",
+          0.16859030723571777
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.5169929265975952
+        ],
+        [
+          "COMMERCIAL",
+          0.4826775789260864
+        ],
+        [
+          "INDIVIDUAL",
+          0.00024245958775281906
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997702240943909
+        ],
+        [
+          "UNKNOWN",
+          0.000216158659895882
+        ],
+        [
+          "GROUP",
+          9.357152521261014e-06
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.08940479092249573,
+      "point_of_entry": 2.4527359682211323,
+      "target_profile": 0.9992959196585984,
+      "suspect_count_estimate": 0.0003314570289646399
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.0348203182220459,
+    "error_flag": false
+  },
+  {
+    "test_id": 48,
+    "raw_narrative": "On 2026-07-01 at 23:09, a robbery was reported at the Chase Bank on 8215 Oak Blvd. The suspect, Jack Walker, approached the teller, Patrick Harris, and presented a note demanding cash and claiming to have a concealed screwdriver. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Edward Nelson, noted the suspect left in a vehicle with license plate DOD-9617. Contact Officer Robert Lee (Badge #3492) at (804)-555-6439.",
+    "anonymized_text": "On 2026-07-01 at 23:09, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed screwdriver. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "FIREARM",
+          0.8072148561477661
+        ],
+        [
+          "NONE",
+          0.11019512265920639
+        ],
+        [
+          "BLADED",
+          0.06284281611442566
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.2701061964035034
+        ],
+        [
+          "NOT_APPLICABLE",
+          0.2417374700307846
+        ],
+        [
+          "REAR_DOOR",
+          0.1953698694705963
+        ]
+      ],
+      "target_profile": [
+        [
+          "COMMERCIAL",
+          0.5167554616928101
+        ],
+        [
+          "VEHICLE",
+          0.4829104542732239
+        ],
+        [
+          "INDIVIDUAL",
+          0.00024289776047226042
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997326731681824
+        ],
+        [
+          "UNKNOWN",
+          0.00025283743161708117
+        ],
+        [
+          "GROUP",
+          1.0017983186116908e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.9845536965444354,
+      "point_of_entry": 2.4695275567186696,
+      "target_profile": 0.9993210873912686,
+      "suspect_count_estimate": 0.0003856180971547423
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.04342246055603027,
+    "error_flag": false
+  },
+  {
+    "test_id": 49,
+    "raw_narrative": "On 2026-07-10 at 07:47, a robbery was reported at the Chase Bank on 1415 Broadway Ct. The suspect, William Walker, approached the teller, Steven Perez, and presented a note demanding cash and claiming to have a concealed crowbar. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Brandon Hall, noted the suspect left in a vehicle with license plate RBT-2121. Contact Officer Samuel Martinez (Badge #7512) at (841)-555-8994.",
+    "anonymized_text": "On 2026-07-10 at 07:47, a robbery was reported at Commercial_Entity_01 on Location_Alpha The suspect, Person_01, approached the teller, Person_02, and presented a note demanding cash and claiming to have a concealed crowbar. The suspect successfully obtained $5,000 in cash and fled through the back exit. A security guard, Person_03, noted the suspect left in a vehicle with License_01 Plate_01. Contact Officer Person_04 (Officer_Alpha) at Phone_01.",
+    "redactions_count": 10,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "License_01": "LICENSE",
+      "Plate_01": "PLATE",
+      "Commercial_Entity_01": "ORG",
+      "Person_01": "PERSON",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON",
+      "Person_04": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "BLUNT_FORCE",
+          0.9886966943740845
+        ],
+        [
+          "FIREARM",
+          0.009238628670573235
+        ],
+        [
+          "NONE",
+          0.001422138069756329
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "NOT_APPLICABLE",
+          0.27129828929901123
+        ],
+        [
+          "FRONT_DOOR",
+          0.2702176868915558
+        ],
+        [
+          "REAR_DOOR",
+          0.16547520458698273
+        ]
+      ],
+      "target_profile": [
+        [
+          "VEHICLE",
+          0.5129944682121277
+        ],
+        [
+          "COMMERCIAL",
+          0.48666244745254517
+        ],
+        [
+          "INDIVIDUAL",
+          0.000255321356235072
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9997764229774475
+        ],
+        [
+          "UNKNOWN",
+          0.000211028236662969
+        ],
+        [
+          "GROUP",
+          8.634030564280692e-06
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.09210052203888565,
+      "point_of_entry": 2.451020829185163,
+      "target_profile": 0.999651399831931,
+      "suspect_count_estimate": 0.00032251595853937835
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03538203239440918,
+    "error_flag": false
+  },
+  {
+    "test_id": 50,
+    "raw_narrative": "On 2026-07-14 at 18:43, Officer Jason Miller (Badge #5906) responded to a shoplifting report at Walmart located at 574 Oak Ln. The suspect, Dennis Green, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Jeffrey Hernandez, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: (500)-555-6873.",
+    "anonymized_text": "On 2026-07-14 at 18:43, Officer Person_01 (Officer_Alpha) responded to a shoplifting report at Commercial_Entity_01 located at Location_Alpha The suspect, Person_02, walked into the store, grabbed several electronic items, and ran out the front door without paying. The store manager, Person_03, tried to stop the suspect, but the suspect threatened them and fled on foot. The suspect was unarmed. Contact: Phone_01.",
+    "redactions_count": 7,
+    "entity_map": {
+      "Phone_01": "PHONE",
+      "Officer_Alpha": "BADGE",
+      "Location_Alpha": "ADDRESS",
+      "Person_01": "PERSON",
+      "Commercial_Entity_01": "ORG",
+      "Person_02": "PERSON",
+      "Person_03": "PERSON"
+    },
+    "top_possibilities": {
+      "weapon_classification": [
+        [
+          "NONE",
+          0.9997032284736633
+        ],
+        [
+          "BLUNT_FORCE",
+          0.00026777564198710024
+        ],
+        [
+          "FIREARM",
+          1.7255020793527365e-05
+        ]
+      ],
+      "point_of_entry": [
+        [
+          "FRONT_DOOR",
+          0.9999796152114868
+        ],
+        [
+          "NOT_APPLICABLE",
+          1.5876765246503055e-05
+        ],
+        [
+          "GARAGE",
+          2.225780008302536e-06
+        ]
+      ],
+      "target_profile": [
+        [
+          "INDIVIDUAL",
+          0.6678304076194763
+        ],
+        [
+          "COMMERCIAL",
+          0.33202311396598816
+        ],
+        [
+          "INFRASTRUCTURE",
+          0.00012823130236938596
+        ]
+      ],
+      "suspect_count_estimate": [
+        [
+          "SOLO",
+          0.9999417066574097
+        ],
+        [
+          "UNKNOWN",
+          4.15432768932078e-05
+        ],
+        [
+          "GROUP",
+          1.3678670256922487e-05
+        ]
+      ]
+    },
+    "entropy_scores": {
+      "weapon_classification": 0.0004280858288576589,
+      "point_of_entry": 2.9407290852042047e-05,
+      "target_profile": 0.9171060667480875,
+      "suspect_count_estimate": 8.409562230832584e-05
+    },
+    "scenarios_count": 3,
+    "duration_seconds": 0.03203415870666504,
+    "error_flag": false
+  }
+]

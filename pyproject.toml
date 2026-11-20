@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dharma"
+version = "2.4.0"
+description = "Dynamic Hierarchical Anonymized Real-Time Modus-Operandi Analytics"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers",
+    "spacy",
+    "pandas",
+    "numpy",
+    "fastapi",
+    "uvicorn",
+    "scipy",
+    "pyproj",
+    "pyarrow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dharma*"]
